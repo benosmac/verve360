@@ -50,7 +50,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Homepage"
         name: "homepage"
-        file: "/content/home.md"
+        file: "content/home.md"
         fields:
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
