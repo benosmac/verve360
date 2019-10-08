@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Welcome
+permalink: /
 intro_paragraph: |-
   ## Unleash potential.
 

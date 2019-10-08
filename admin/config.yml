@@ -50,6 +50,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Homepage"
         name: "homepage"
+        permalink: "/"
         file: "pages/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
