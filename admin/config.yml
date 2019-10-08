@@ -55,6 +55,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-            - {label: "Second Paragraph", name: "second_paragraph", widget: "markdown", required: false}
+          - {label: "Second Paragraph", name: "second_paragraph", widget: "markdown", required: false}
           - {label: "Third Paragraph", name: "third_paragraph", widget: "markdown", required: false}
       
