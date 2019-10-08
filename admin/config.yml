@@ -44,3 +44,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+    # UNIQUE PAGES
+  - name: "contentpage"
+    label: "Content Page"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "site/content/home.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+          - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "Third Paragraph", name: "third_paragraph", widget: "markdown", required: false}
+      
