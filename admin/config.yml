@@ -59,6 +59,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Third Paragraph", name: "third_paragraph", widget: "markdown", required: false}
       - label: "About"
         name: "about"
+        permalink: "/about"
+        layout: "page";
+        section: "about";
         file: "pages/about.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
