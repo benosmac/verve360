@@ -8,15 +8,15 @@ intro_paragraph: |-
 
   ## Accelerate growth.
 second_paragraph: >-
-  _**Is your business suffering from growing pains?**_
+  **_Is your business suffering from growing pains?_**
 
 
-  _**Are you looking for effective ways to attract more business, sales,
-  customers?**_ 
+  **_Are you looking for effective ways to attract more business, sales,
+  customers?_** 
 
 
-  _**Are you worried you're getting left by the wayside by your
-  competitors?**_  
+  **_Are you worried you're getting left by the wayside by your
+  competitors?_**  
 
 
   Your growth partner, we are here to to put an end to the problems you're
