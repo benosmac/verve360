@@ -2,7 +2,8 @@
 layout: home
 title: Welcome
 permalink: /
-headline: |-
+section: home
+headline: >-
   ## Unleash potential.
 
   ## Harness opportunities.
