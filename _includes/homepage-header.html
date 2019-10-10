@@ -1,0 +1,11 @@
+{% if page.second_paragraph and page.second_paragraph != '' %}
+  <p class="second_para">
+    {{ page.second_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+
+{% if page.third_paragraph and page.third_paragraph != '' %}
+  <p class="third_para">
+    {{ page.third_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}

@@ -2,12 +2,16 @@
 layout: home
 title: Welcome
 permalink: /
-intro_paragraph: |-
+headline: |-
   ## Unleash potential.
 
   ## Harness opportunities.
 
   ## Accelerate growth.
+
+intro_paragraph: >-
+A purpose-driven business consulting agency, we inspire small and medium businesses to accelerate and achieve sustainable growth. 
+
 second_paragraph: >-
   **_Is your business suffering from growing pains?_**
 

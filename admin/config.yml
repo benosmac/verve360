@@ -61,8 +61,8 @@ collections: # A list of collections the CMS should be able to edit
       - label: "About"
         name: "about"
         permalink: "/about"
-        layout: "page";
-        section: "about";
+        layout: "page"
+        section: "about"
         file: "pages/about.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
