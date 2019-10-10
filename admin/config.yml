@@ -50,10 +50,11 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Homepage"
         name: "homepage"
-        permalink: "/"
+       # permalink: "/"
         file: "pages/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Headline", name: "headline", widget: "markdown", required: false}
           - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
@@ -61,12 +62,13 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Third Paragraph", name: "third_paragraph", widget: "markdown", required: false}
       - label: "About"
         name: "about"
-        permalink: "/about"
-        layout: "page"
+   #     permalink: "/about"
+    #    layout: "page"
         section: "about"
         file: "pages/about.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       
