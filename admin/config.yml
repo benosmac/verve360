@@ -60,6 +60,22 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
           - {label: "Second Paragraph", name: "second_paragraph", widget: "markdown", required: false}
           - {label: "Third Paragraph", name: "third_paragraph", widget: "markdown", required: false}
+          - {label: "Services intro", name: "services_intro", widget: "markdown", required: false}
+          - {label: "Advisory & Coaching", name: "advisory", widget: "markdown", required: false}
+          - {label: "Strategic Branding", name: "branding", widget: "markdown", required: false}
+          - {label: "Sales, Marketing & Communication", name: "sales", widget: "markdown", required: false}
+          - {label: "Employee Alignment & Connection", name: "employee_alignment", widget: "markdown", required: false}
+          - {label: "Customers intro", name: "customers_intro", widget: "markdown", required: false}
+          - {label: "Customers - scenarios", name: "customers_scenarios", widget: "list", required: false, field: {label: Content, name: content, widget: string}}
+          - {label: "Customers outro", name: "customers_ontro", widget: "markdown", required: false}
+          - label: "Beliefs"
+            name: "beliefs"
+            widget: "list"
+            required: false
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Content, name: content, widget: markdown}
+              - {label: Icon, name: icon, widget: image}
       - label: "About"
         name: "about"
    #     permalink: "/about"
