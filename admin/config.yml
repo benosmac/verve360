@@ -68,14 +68,27 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Customers intro", name: "customers_intro", widget: "markdown", required: false}
           - {label: "Customers - scenarios", name: "customers_scenarios", widget: "list", required: false, field: {label: Content, name: content, widget: string}}
           - {label: "Customers outro", name: "customers_ontro", widget: "markdown", required: false}
-          - label: "Beliefs"
-            name: "beliefs"
+          - {label: "Cohesion", name: "cohesion", widget: "markdown", required: false}
+          - {label: "Collaboration", name: "collaboration", widget: "markdown", required: false}
+          - {label: "Clarity", name: "clarity", widget: "markdown", required: false}
+          - {label: "Value", name: "value", widget: "markdown", required: false}
+          - {label: "Hearts & Minds", name: "hearts", widget: "markdown", required: false}
+          - {label: "Standing Out", name: "standingout", widget: "markdown", required: false}
+          - label: "Family of Growth"
+            name: "family"
             widget: "list"
             required: false
             fields:
               - {label: Title, name: title, widget: string}
+              - {label: URL, name: url, widget: markdown}
+              - {label: Logo, name: logo, widget: image}
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            required: false
+            fields:
               - {label: Content, name: content, widget: markdown}
-              - {label: Icon, name: icon, widget: image}
+              - {label: Name, name: name, widget: string}
       - label: "About"
         name: "about"
    #     permalink: "/about"

@@ -1,0 +1,18 @@
+<section class="customers">
+	<h2 class="section-header">Our Customers. <span class="highlight">You</span></h2>
+{% if page.customers_intro and page.customers_intro != '' %}
+  <p class="customers_intro">
+    {{ page.customers_intro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+<span class="customers-question">Your business:</span>
+<ul class="customers_list">
+{% if page.customers_scenarios and page.customers_scenarios != '' %}
+  {% for scenario in page.customers_scenarios %}
+  <li class="customers_list-item">
+    {{ scenario.content}}
+  </li>
+  {% endfor %}
+{% endif %}
+</ul>
+</section>

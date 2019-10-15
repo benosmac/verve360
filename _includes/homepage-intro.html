@@ -1,3 +1,4 @@
+<section class="home-intro">
 {% if page.second_paragraph and page.second_paragraph != '' %}
   <p class="second_para">
     {{ page.second_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -9,3 +10,4 @@
     {{ page.third_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
+</section>
