@@ -29,7 +29,6 @@ second_paragraph: >-
   implementation. We turn your vision into exceptional results and deliver
   success beyond profit.
 third_paragraph: >-
-  ### <span class="highlight">Why grow?</span> 
 
 
   Growth isn’t always about what you do; it's about what you're not doing. Most
@@ -67,7 +66,7 @@ customers_intro: >-
   
 customers_scenarios: >-
   
-customers_ontro: >-
+customers_outro: >-
   Are you a small to medium business that operates in the B2B market space? 
   Does any of the following sound like your business?
   
