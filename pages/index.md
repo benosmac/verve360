@@ -11,7 +11,7 @@ headline: |-
 intro_paragraph: >-
   A purpose-driven business consulting agency, we inspire small and medium
   businesses to accelerate and achieve sustainable growth.
-second_paragraph: >-
+second_paragraph: |-
   Is your business suffering from growing pains?
 
 
@@ -58,16 +58,15 @@ employee_alignment: >-
   programs to inform, motivate and inspire your employees to embrace your brand, align to your culture and be the advocates
   to your business. 
   Remember, happy employees = happy customers = healthy profit.
-customers_intro: >-
-customers_scenarios: >-
+# customers_intro: >-
+# customers_scenarios: >-
 customers_outro: >-
   Are you a small to medium business that operates in the B2B market space? 
   Does any of the following sound like your business?
-beliefs: >-
-customers_scenarios: >-
+# beliefs: >-
+# customers_scenarios: >-
 testimonials:
   - content: test testimonial
     name: some name
     
 ---
-
