@@ -74,5 +74,10 @@ customers_ontro: >-
 beliefs: >-
 
 customers_scenarios: >-
+
+testimonials:
+  - content: test testimonial
+    name: some name
+    
 ---
 
