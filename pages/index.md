@@ -3,24 +3,24 @@ layout: home
 title: Welcome
 permalink: /
 headline: |-
-  Unleash potential.<br>
+  Unleash potential.
 
-  Harness opportunities.<br>
+  Harness opportunities.
 
-  Accelerate <span class="highlight">growth.</span>
+  Accelerate growth.
 intro_paragraph: >-
   A purpose-driven business consulting agency, we inspire small and medium
   businesses to accelerate and achieve sustainable growth.
 second_paragraph: >-
-  Is your business suffering from growing pains? <br> 
+  Is your business suffering from growing pains?
 
 
   Are you looking for effective ways to attract more business, sales,
-  customers? <br> 
+  customers?
 
 
   Are you worried you're getting left by the wayside by your
-  competitors? <br> <br>
+  competitors?
 
 
   Your growth partner, we are here to to put an end to the problems you're
@@ -40,11 +40,13 @@ third_paragraph: >-
 
 services_intro: >-
   Each journey is unique, and our tailored solutions reflect that. 
-  Before we act, we think. We ask the right questions that help us understand your business before we offer you holistic solutions to help achieve your goals. 
+  Before we act, we think. We ask the right questions that help us understand your business before we offer you holistic
+  solutions to help achieve your goals. 
   Our services serve one purpose, one goal or one task.
   
 advisory: >-
-  We empathise just how tough it can be leading and growing a business. We have a collaborative and personalised approach that helps you leverage your talents and personalities, to accelerate your business’s growth path.
+  We empathise just how tough it can be leading and growing a business. We have a collaborative and personalised approach
+  that helps you leverage your talents and personalities, to accelerate your business’s growth path.
   
 branding: >-
   We provide clarity of the foundational ‘essence’ of your brand:
@@ -55,10 +57,14 @@ branding: >-
   We tell your brand story and ensure your brand promise comes to life and stays intact throughout the customer lifecycle.
   
 sales: >-
-  We help you win and retain more customers, turn your customers into your brand advocates and minimise customer churn, through aligning sales and marketing processes, integrating marketing and communication activities, evaluating and understanding your market and customers, being responsive and adaptive.
+  We help you win and retain more customers, turn your customers into your brand advocates and minimise customer churn,
+  through aligning sales and marketing processes, integrating marketing and communication activities, evaluating and
+  understanding your market and customers, being responsive and adaptive.
   
 employee_alignment: >-
-  We partner with you in identifying and developing employee alignment and engagement; internal branding and communication programs to inform, motivate and inspire your employees to embrace your brand, align to your culture and be the advocates to your business. 
+  We partner with you in identifying and developing employee alignment and engagement; internal branding and communication
+  programs to inform, motivate and inspire your employees to embrace your brand, align to your culture and be the advocates
+  to your business. 
   Remember, happy employees = happy customers = healthy profit.
   
 customers_intro: >-
