@@ -61,8 +61,80 @@ header > h1 {
     color: white;
   }
 }
-
+@media screen and (max-width: $sm) {
+	#nav {
+		transform: translateX(100%);
+	    position: absolute;
+	    display: flex;
+	    height: 100vh;
+	    width: 100vw;
+	    background: #222;
+	    ul{
+			display: flex;
+		    flex-direction: column;
+		    /* position: absolute; */
+		    align-items: center;
+		    justify-content: center;
+		    flex-basis: 100%;
+		    li{
+			    padding: 2rem;
+			  a,
+		      a:visited {
+				color: #fff;
+			    text-decoration: none;
+			    border: 0;
+			    font-weight: 500;
+			    font-size: 2rem;
+	      }
+	    }
+	    }
+    }
+    #nav.active{
+		transform: translateX(0);
+	}
+	#nav-svg{
+		width: 40px;
+		height: 40px;
+	}
+	  .nav-line {
+        fill: none;
+        stroke: #222;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+        transition: all .5s linear;
+        transform: none;
+      }
+}
+#nav-toggle{
+		display: block;
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		width: 40px;
+		height: 40px;
+		border: none;
+}
+#nav-toggle.open{
+	.nav-line{
+		stroke: #fff;
+	}
+	.nav-line--3{
+		transform: rotate(45deg) translate(20px, -30px);
+	}
+	.nav-line--2{
+		transform: rotate(-45deg) translate(-40px, -15px);
+	}
+	.nav-line--1{
+		transform: translateX(50px);
+		opacity: 0;
+	}
+}
 // main menu, is a grid item
+@media screen and (min-width: $sm) {
+   #nav-toggle{
+	   display: none;
+   }
+  }
 header > nav {
   @media screen and (min-width: $sm) {
     float: right;
@@ -76,6 +148,7 @@ header > nav {
       @media screen and (min-width: $sm) {
         margin-right: 0;
       }
+      @media screen and (min-width: $sm) {
       a,
       a:visited {
         color: $text-color;
@@ -94,6 +167,7 @@ header > nav {
       a:hover {
         color: $text-color;
         border-bottom: 2px solid $brand-color;
+      }
       }
     }
   }

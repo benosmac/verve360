@@ -77,6 +77,8 @@ function runLogoAnimation() {
 function pageLoading(){
 	//logoAnimation.style.cssText = 'display:none;';
 	//loadingIndicator.style.cssText = 'display:inline-block;';
+	n.classList.remove('active');
+	nb.classList.remove('open');
 	b.classList.add('loading');
 	b.classList.remove('loaded');
 	//setupLogoAnimation(runLogoAnimation);
@@ -135,3 +137,10 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:send', pageLoading);
 document.addEventListener('pjax:complete', pageLoaded);
+const nb = document.getElementById('nav-toggle')
+const n = document.getElementById('nav');
+nb.addEventListener('click', toggleNav);
+function toggleNav(){
+	n.classList.toggle('active');
+	nb.classList.toggle('open');
+}
