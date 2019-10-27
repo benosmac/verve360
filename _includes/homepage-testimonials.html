@@ -1,0 +1,18 @@
+<section class="testimonials content-col">
+	<h2 class="section-header"><span class="scroll fadeIn">Our Testimonials.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">Your Comfort.</span></h2>
+{% if page.testimonials_intro and page.testimonials_intro != '' %}
+  <p class="testimonials_intro">
+    {{ page.testimonials_intro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+<ul class="testimonials_list">
+{% if page.testimonials and page.testimonials != '' %}
+  {% for testimonial in page.testimonials %}
+  <li class="testimonials_list-item">
+    <p>{{testimonial.content}}</p>
+    <span>{{testimonial.name}}</span>
+  </li>
+  {% endfor %}
+{% endif %}
+</ul>
+</section>

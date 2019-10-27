@@ -1,38 +1,50 @@
-<section class="services">
-	<h2 class="section-header">Our Services. <span class="highlight">Your solutions</span></h2>
+<section class="services-intro content-col bottom-triangle">
+	<h2 class="section-header"><span class="scroll fadeIn">Our Services.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">Your solutions</span></h2>
 {% if page.services_intro and page.services_intro != '' %}
-  <p class="services_intro">
+  <p class="services_intro scroll fadeIn" data-wow-delay=".8s">
     {{ page.services_intro | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
-<ul class="services_list">
+</section>
+<ul class="icon_list" id="services">
 {% if page.advisory and page.advisory != '' %}
-  <li class="services_list-item">
+  <li class="icon_list-item" id="services-1">
+  <span class="icon_list-content">
   	<h3>Advisory</h3>
     <p>{{ page.advisory | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    <span class="services_list-icon"></span>
+    <a title="Advisory" href="/advisory">Learn More</a>
+  </span>
+    <span class="icon_list-icon"> {% include icons/handshake.svg %} </span>
   </li>
 {% endif %}
 {% if page.branding and page.branding != '' %}
-  <li class="services_list-item">
+  <li class="icon_list-item" id="services-2">
+  <span class="icon_list-content">
   	<h3>Strategic Branding</h3>
     <p>{{ page.branding | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    <span class="services_list-icon"></span>
+    <a title="Strategic Branding" href="/strategic-branding">Learn More</a>
+  </span>
+    <span class="icon_list-icon"> {% include icons/bulb.svg %} </span>
   </li>
 {% endif %}
 {% if page.sales and page.sales != '' %}
-  <li class="services_list-item">
+  <li class="icon_list-item" id="services-3">
+  <span class="icon_list-content">
   	<h3>Sales, Marketing & Communication</h3>
     <p>{{ page.sales | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    <span class="services_list-icon"></span>
+    <a title="Sales, Marketing & Communication" href="/sales-marketing-communication">Learn More</a>
+  </span>
+    <span class="icon_list-icon"> {% include icons/bullhorn.svg %} </span>
   </li>
 {% endif %}
 {% if page.employee_alignment and page.employee_alignment != '' %}
-  <li class="services_list-item">
+  <li class="icon_list-item" id="services-4">
+  <span class="icon_list-content">
   	<h3>Employee Alignment & Connection</h3>
     <p>{{ page.employee_alignment | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    <span class="services_list-icon"></span>
+    <a title="Employee Alignment & Connection" href="/employee_alignment_connection">Learn More</a>
+  </span>
+    <span class="icon_list-icon"> {% include icons/network.svg %} </span>
   </li>
 {% endif %}
 </ul>
-</section>

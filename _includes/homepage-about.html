@@ -1,0 +1,13 @@
+<section class="about-us content-col">
+	<h2 class="section-header"><span class="scroll fadeIn">ABOUT US</span></h2>
+{% if page.about-us_intro and page.about-us_intro != '' %}
+  <p class="about-us_intro">
+    {{ page.about-us_intro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+<div class="about-us_content">
+{% if page.about-us_content and page.about-us_content != '' %}
+  {{ page.about-us_content | markdownify }}
+{% endif %}
+</div>
+</section>

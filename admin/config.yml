@@ -57,9 +57,10 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Headline", name: "headline", widget: "markdown", required: false}
-          - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-          - {label: "Second Paragraph", name: "second_paragraph", widget: "markdown", required: false}
-          - {label: "Third Paragraph", name: "third_paragraph", widget: "markdown", required: false}
+          - {label: "Header Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "Intro Questions", name: "questions", widget: "markdown", required: false}
+          - {label: "Intro Paragraph", name: "second_paragraph", widget: "markdown", required: false}
+          - {label: "Why grow?", name: "third_paragraph", widget: "markdown", required: false}
           - {label: "Services intro", name: "services_intro", widget: "markdown", required: false}
           - {label: "Advisory & Coaching", name: "advisory", widget: "markdown", required: false}
           - {label: "Strategic Branding", name: "branding", widget: "markdown", required: false}
@@ -74,14 +75,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Value", name: "value", widget: "markdown", required: false}
           - {label: "Hearts & Minds", name: "hearts", widget: "markdown", required: false}
           - {label: "Standing Out", name: "standingout", widget: "markdown", required: false}
+          - {label: "Family of Growth - Intro", name: "family_intro", widget: "markdown", required: false}
           - label: "Family of Growth"
             name: "family"
             widget: "list"
             required: false
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: URL, name: url, widget: markdown}
+              - {label: URL, name: url, widget: string}
               - {label: Logo, name: logo, widget: image}
+          - {label: "Testimonials - Intro", name: "testimonials_intro", widget: "markdown", required: false}
           - label: "Testimonials"
             name: "testimonials"
             widget: "list"
@@ -99,5 +102,12 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-          - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "About us - Intro", name: "about-intro", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-p1", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-p2", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-we-are", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-we-are-not", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-p3", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-p4", widget: "markdown", required: false}
+          - {label: "About us - Content", name: "about-p5", widget: "markdown", required: false}
       

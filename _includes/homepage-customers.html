@@ -1,18 +1,35 @@
-<section class="customers">
-	<h2 class="section-header">Our Customers. <span class="highlight">You</span></h2>
+<section class="customers content-col">
+	<h2 class="section-header"><span class="scroll fadeIn">Our Customers.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">You</span></h2>
 {% if page.customers_intro and page.customers_intro != '' %}
-  <p class="customers_intro">
+  <p class="customers_intro scroll fadeIn" data-wow-delay=".8s">
     {{ page.customers_intro | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
-<span class="customers-question">Your business:</span>
-<ul class="customers_list">
-{% if page.customers_scenarios and page.customers_scenarios != '' %}
-  {% for scenario in page.customers_scenarios %}
-  <li class="customers_list-item">
-    {{ scenario.content}}
-  </li>
-  {% endfor %}
+</section>
+<section class="customers-questions">
+	<div class="customers-questions--title right-to-bottom-triangle--black scroll slideInLeft">
+<h3>Your business:</h3>
+	</div>
+	<div class="customers-questions--list scroll fadeIn" data-wow-delay=".8s">
+		<ul class="customers_list">
+		{% if page.customers_scenarios and page.customers_scenarios != '' %}
+		  {% for scenario in page.customers_scenarios %}
+		  <li class="customers_list-item">
+		    {{ scenario.content}}
+		  </li>
+		  {% endfor %}
+		{% endif %}
+		</ul>
+	</div>
+</section>
+<section class="customers-outro">
+{% if page.customers_ontro and page.customers_ontro != '' %}
+  <p class="scroll fadeIn" data-wow-delay=".4s">
+    {{ page.customers_ontro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
 {% endif %}
-</ul>
+<span>
+<h3 class="scroll fadeIn">Book your free 1-hour advisory session now!</h3>
+<a href="contact" title="contact us" class="scroll bounceIn" data-wow-delay=".6s">Contact Us</a>
+</span>
 </section>

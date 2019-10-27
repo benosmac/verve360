@@ -4,24 +4,22 @@ permalink: /
 title: Welcome
 headline: |-
   Unleash potential.
-
+  
   Harness opportunities.
-
-  Accelerate growth.
+  
+  Accelerate **growth.**
 intro_paragraph: >-
   A purpose-driven business consulting agency, we inspire small and medium
   businesses to accelerate and achieve sustainable growth.
+questions: |-   
+  #### Is your business suffering from growing pains?
+  
+  
+  #### Are you looking for effective ways to attract more business, sales, customers?
+  
+  
+  #### Are you worried you're getting left by the wayside by your competitors?
 second_paragraph: |-
-  Is your business suffering from growing pains?
-
-
-  Are you looking for effective ways to attract more business, sales,
-  customers?
-
-
-  Are you worried you're getting left by the wayside by your
-  competitors?
-
 
   Your growth partner, we are here to to put an end to the problems you're
   facing in your business today. We listen intently, lead with questions, not
@@ -29,6 +27,8 @@ second_paragraph: |-
   implementation. We turn your vision into exceptional results and deliver
   success beyond profit.
 third_paragraph: >-
+  ### Why grow?
+  
   Growth isn’t always about what you do; it's about what you're not doing. Most
   businesses define growth as an increment in revenue, profit or size. To us,
   growth is much more than that; it’s also about value, importance and
@@ -66,7 +66,15 @@ customers_intro: |-
   Are you a small to medium business that operates in the B2B market space? 
 
   Does any of the following sound like your business?
-customers_scenarios: []
+customers_scenarios:
+  - content: idea is worth pursuing and you are ready to start up
+  - content: has a solid foundation and now you are ready to scale up
+  - content: is experiencing growing pain
+  - content: is not growing
+  - content: has potential growth opportunities to harness
+  - content: is growing too quickly
+  - content: is unable to achieve the growth you're striving for with your existing expertise
+  - content: is not growing fast enough
 customers_ontro: >-
   We understand that different growth levers need to be activated at various
   stages of growth, so we adjust our scope and processes accordingly. No matter
@@ -135,12 +143,36 @@ hearts: >-
 
   The benefit – A balanced approach to capture a bigger market share
 standingout: "Standing head and shoulders above the rest.\n\n* Conforming makes you just like the others\n* In this small, crowded and competitive Australian market, you cannot afford to be just like the others\n* If customers cannot see how you’re different from others, then you are invisible\n* It’s about being\_bold, showing and proving how you’re\_different, and better, then the rest\n* If you believe that\_you cannot solve new problems using old solutions, then\_let’s talk\n* Make you the number 1 choice"
+family_intro: >-
+  Verve360 and its founder Martin Foon works across a variety of sectors and markets. Our clients, partners, associates and friends include companies such as...
 family:
   - logo: /assets/img/uploads/0.png
     title: Absafe
     url: 'http://www.absafe.com.au/'
+  - logo: /assets/img/uploads/0.png
+    title: Absafe
+    url: 'http://www.absafe.com.au/'
+  - logo: /assets/img/uploads/0.png
+    title: Absafe
+    url: 'http://www.absafe.com.au/'
+  - logo: /assets/img/uploads/0.png
+    title: Absafe
+    url: 'http://www.absafe.com.au/'
+  - logo: /assets/img/uploads/0.png
+    title: Absafe
+    url: 'http://www.absafe.com.au/'
+  - logo: /assets/img/uploads/0.png
+    title: Absafe
+    url: 'http://www.absafe.com.au/'
+testimonials_intro: >-
+  Don’t just take our words. Check out what some of our clients say about us.
 testimonials:
-  - content: test testimonial
-    name: some name
+  - content: I established and led an IT company for over 17 years and worked with many marketing companies and specialists over that time. Most of them delivered minimal outcomes until Verve360 came along. Verve360 helped me to really understand the vital role which branding, marketing and communications play in creating internal brand alignment, building company culture, and leveraging this to communicate a cohesive marketing story that has integrity. For a company looking to grow from small to medium in size, Martin's advice and understanding were priceless. I learnt a lot from the time I spent with Martin and found him to be engaging, supportive and knowledgeable. I recommend him to any business owner who wants to cut through the hype of marketing, create an aligned internal and external brand, to achieve excellent outcomes.
+    name: David Markus, Founder and Director, Combo
+  - content: Testimonial from Consortio.
+    name: Mike Paine, Chief Executive Officer, Consortio
+  - content: Testimonial from Graeme Neville
+    name: Graeme Neville, Chairman, Carrington King
+    
 ---
 

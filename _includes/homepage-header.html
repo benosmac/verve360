@@ -1,12 +1,15 @@
-<section class="home-header">
+<section class="hero-section home-header">
 {% if page.headline and page.headline != '' %}
-  <h2 class="home-header--headline">
-    {{ page.headline | markdownify | remove: '<p>' | remove: '</p>' }}
+  <h2 class="hero-section--headline home-header--headline">
+    {{ page.headline | markdownify }}
   </h2>
 {% endif %}
 {% if page.intro_paragraph and page.intro_paragraph != '' %}
-  <p class="home-header--intro">
+  <p class="home-header--intro ">
     {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
+<img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
+<img class="circle" id="c2" data-speed=".4" data-direction="up" src="/assets/img/v360-circle.svg">
+<img class="circle" id="c3" data-speed=".6" data-direction="up" src="/assets/img/v360-circle.svg">
 </section>

@@ -1,0 +1,50 @@
+<svg id="stroke-logo" class="animated" style="display:none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 498 227">
+  <defs>
+    <linearGradient id="linear-gradient" x1="108" y1="171.47" x2="334.14" y2="171.47" gradientTransform="matrix(1, 0, 0, -1, 0, 228)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.13" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.95" stop-color="#5dba4d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="108" y1="58.4" x2="334.14" y2="58.4" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>v360-stroke</title>
+<g id="svgVerve">
+<!-- V -->
+<line class="text-stroke draw-strokes" x1="30.5" y1="144.5" x2="3" y2="83.2"/>
+<line class="text-stroke draw-strokes" x1="58.2" y1="83.2" x2="30.5" y2="144.5"/>
+<!-- E -->
+<line class="text-stroke draw-strokes" x1="77.6" y1="83.8" x2="77.6" y2="145"/>
+<line class="text-stroke draw-strokes" x1="112.7" y1="83.8" x2="77.6" y2="83.8"/>
+<line class="text-stroke draw-strokes" x1="77.7" y1="113.9" x2="108" y2="113.9"/>
+<line class="text-stroke draw-strokes" x1="77.6" y1="145" x2="112.7" y2="145"/>
+<!-- R -->
+<line class="text-stroke draw-strokes" x1="136.05" y1="145.36" x2="136.05" y2="83.81"/>
+<path class="text-stroke draw-strokes" d="M136.05,118.46h22.84c9.41,0,17.76-7.75,17.76-17.27,0-9.09-8.51-17.36-17.76-17.36H136"/>
+<line class="text-stroke draw-strokes" x1="174.77" y1="145.36" x2="160.71" y2="118.36"/>
+<!-- V -->
+<line class="text-stroke draw-strokes" x1="219.8" y1="144.5" x2="192.3" y2="83.2"/>
+<line class="text-stroke draw-strokes" x1="247.5" y1="83.2" x2="219.8" y2="144.5"/>
+<!-- E -->
+<line class="text-stroke draw-strokes" x1="266.8" y1="113.9" x2="297.2" y2="113.9"/>
+<line class="text-stroke draw-strokes" x1="266.9" y1="145" x2="302" y2="145"/>
+<line class="text-stroke draw-strokes" x1="266.9" y1="83.8" x2="266.9" y2="145"/>
+<line class="text-stroke draw-strokes" x1="302" y1="83.8" x2="266.9" y2="83.8"/>
+</g>
+
+<!-- 360 -->
+<g id="svg360">
+<path class="text-stroke--thin" d="M350.1,114.7l8.7-0.3c4.1,0,8.1-1.3,11.5-3.6c0.5-0.4,1.5-1.2,2-1.7c2.9-2.6,4.6-6.4,4.5-10.3
+	c0.1-4.3-1.7-8.4-4.9-11.2c-3.4-2.9-7.7-4.4-12.2-4.3c-4.3,0-8.5,1.3-12,3.7c-1.7,1.1-3.2,2.4-4.5,3.9"/>
+<path class="text-stroke--thin" d="M474.4,83.2c6.5-0.2,12.5,3.1,16,8.5c3.7,5.5,5.6,13.6,5.6,23.6s-1.9,18.1-5.6,23.6c-6,8.9-18,11.2-26.9,5.2
+	c-2-1.4-3.8-3.1-5.2-5.2c-3.7-5.6-5.6-13.6-5.6-23.6s1.9-18,5.6-23.6C461.8,86.3,467.9,83,474.4,83.2z"/>
+<path class="text-stroke--thin" d="M341.1,139.7l0.7,0.7c2.4,2.5,7.3,7.1,17.2,7.1c5.7,0,10.6-1.6,14.2-4.7c1.7-1.4,3.1-3.2,4-5.2
+	c0.9-2.1,1.4-4.4,1.4-6.8c0-7.5-6.5-15.9-18.7-15.9l-9.7-0.2"/>
+<path class="text-stroke--thin" d="M426.5,81.9c-5.7,2.2-11,5.4-15.7,9.3c-3.3,2.7-6.2,5.9-8.6,9.4c-2.5,3.9-4.3,8.2-5.2,12.7
+	c-0.6,3-0.9,6.1-1,9.2c0.1,6.6,1.8,12.7,5.1,17.2c3.6,5.1,9.5,8.1,15.7,7.9c5.2,0,10.2-2.2,13.8-6c3.7-3.8,5.7-8.9,5.7-14.2
+	c0.1-10.6-8.3-19.3-18.9-19.4c-0.2,0-0.3,0-0.5,0c-12,0-19,8.7-20.7,11.2"/>
+</g>
+<!-- Big Circle -->	
+<path class="big-circle big-circle--top draw-strokes" d="M116,113.07a105.07,105.07,0,0,1,210.14,0"/>
+<path class="big-circle draw-strokes" d="M326.14,113.07a105.07,105.07,0,0,1-210.14,0"/>
+<!-- Small Circle -->	
+<circle id="small-circle" cx="326.1" cy="113.1" r="4.9"/>
+</svg>

@@ -1,0 +1,67 @@
+
+  <div class="page-header about-header hero-section">
+	  <h2 class="page-header--title">About us</h2>
+	  
+	{% if page.about-intro and page.about-intro != '' %}
+	<span class="page-header--intro">
+      {{ page.about-intro | markdownify }}
+      </span>
+    {% endif %}
+	  <img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
+<img class="circle" id="c2" data-speed=".4" data-direction="up" src="/assets/img/v360-circle.svg">
+<img class="circle" id="c3" data-speed=".6" data-direction="up" src="/assets/img/v360-circle.svg">
+  </div>
+
+{% if page.about-p1 and page.about-p1 != '' %}
+<section class="page-section">
+	<div class="content-col scroll fadeIn">
+  {{ page.about-p1 | markdownify }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.about-p2 and page.about-p2 != '' %}
+<section class="page-section grey">
+	<div class="content-col scroll fadeIn">
+  {{ page.about-p2 | markdownify }}
+  </div>
+</section>
+{% endif %}
+
+
+<section class="page-section panel-wrap">
+{% if page.about-we-are and page.about-we-are != '' %}
+<div class="panel-half green scroll slideInLeft">
+  {{ page.about-we-are | markdownify }}
+</div>
+  {% endif %}
+  {% if page.about-we-are-not and page.about-we-are-not != '' %}
+  <div class="panel-half black scroll slideInRight">
+  {{ page.about-we-are-not | markdownify }}
+  </div>
+  {% endif %}
+</section>
+
+{% if page.about-p3 and page.about-p3 != '' %}
+<section class="page-section">
+	<div class="content-col scroll fadeIn">
+  {{ page.about-p3 | markdownify }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.about-p4 and page.about-p4 != '' %}
+<section class="page-section grey">
+	<div class="content-col scroll fadeIn">
+  {{ page.about-p4 | markdownify }}
+  </div>
+</section>
+{% endif %}
+
+{% if page.about-p5 and page.about-p5 != '' %}
+<section class="page-section">
+	<div class="content-col scroll fadeIn">
+  {{ page.about-p5 | markdownify }}
+	</div>
+</section>
+{% endif %}

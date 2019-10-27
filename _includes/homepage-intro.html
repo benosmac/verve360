@@ -1,13 +1,18 @@
 <section class="home-intro">
+	<div class="home-intro--questions right-to-bottom-triangle scroll slideInLeft">
+{% if page.questions and page.questions != '' %}
+    {{ page.questions | markdownify }}
+{% endif %}
+	</div>
+	<div class="home-intro--paragraph scroll fadeIn" data-wow-delay=".8s">
 {% if page.second_paragraph and page.second_paragraph != '' %}
-  <p class="second_para">
-    {{ page.second_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
-  </p>
+    {{ page.second_paragraph | markdownify }}
 {% endif %}
-
+</section>
+<section class="home-blurb">
+	<div class="content-col scroll fadeIn">
 {% if page.third_paragraph and page.third_paragraph != '' %}
-  <p class="third_para">
-    {{ page.third_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
-  </p>
+    {{ page.third_paragraph | markdownify }}
 {% endif %}
+	</div>
 </section>

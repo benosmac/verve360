@@ -1,0 +1,19 @@
+<section class="family content-col">
+	<h2 class="section-header"><span class="scroll fadeIn">Our Family of Growth.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">Your Family</span></h2>
+{% if page.family_intro and page.family_intro != '' %}
+  <p class="family_intro scroll fadeIn" data-wow-delay=".8s">
+    {{ page.family_intro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+<ul class="family_list">
+{% if page.family and page.family != '' %}
+  {% for member in page.family %}
+  <li class="family_list-item scroll fadeInUp">
+    <a title="{{ member.title }}" href="{{ member.url }}" target="_blank">
+    <img src="{{ member.logo }}">
+    </a>
+  </li>
+  {% endfor %}
+{% endif %}
+</ul>
+</section>
