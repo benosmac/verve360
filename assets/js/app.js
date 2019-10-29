@@ -1,3 +1,21 @@
+const swupOptions = {
+  animateHistoryBrowsing: false,
+  animationSelector: '[class*="page-transition-"]',
+  containers: ["#main"],
+  linkSelector:
+    'a[href^="' +
+    window.location.origin +
+    '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
+};
+
+const swup = new Swup(swupOptions);
+swup.on('animationOutDone', function(){
+	pageLoading();
+});
+swup.on('animationInDone', function(){
+	b.classList.add('loaded');
+});
+
 window.onscroll = function(){backgroundColorScroll('services', ['services-1','services-2','services-3','services-4']),backgroundColorScroll('beliefs', ['beliefs-1','beliefs-2','beliefs-3','beliefs-4','beliefs-5','beliefs-6']), scrollParralax()};
 
 // Change the background-color of a parent element when child elements are in the middle of the viewport.
@@ -26,9 +44,10 @@ function backgroundColorScroll(wrapper, elements) {
 		}
 	}
 }
-const parallaxEls = document.querySelectorAll("[data-speed]");
+
 const b = document.getElementById('body');
 function scrollParralax(){
+	var parallaxEls = document.querySelectorAll("[data-speed]");
 	//b.classList.add('scrolled');
 	if (this.pageYOffset < vh){
 	for (const parallaxEl of parallaxEls) {
@@ -40,7 +59,7 @@ function scrollParralax(){
 	  }
 }
 //const loadingScreen = document.getElementById("loading-screen");
-const logoAnimation = document.getElementById("stroke-logo");
+const logo = document.getElementById("stroke-logo");
 //const loadingIndicator = document.getElementById("loading-circle");
 const svgDrawingPaths = document.querySelectorAll(".text-stroke");
 const svgVerve = document.getElementById("svgVerve");
@@ -49,7 +68,7 @@ const svgCirclePaths = document.querySelectorAll(".big-circle");
 
 function setupLogoAnimation(){
 	//b.classList.add('animating-logo');
-	logoAnimation.style.cssText = 'display:inline-block;';
+	logo.style.cssText = 'display:inline-block;';
 	i = 0;
 	for (const path of svgDrawingPaths){
 		i++;
@@ -71,7 +90,7 @@ function runLogoAnimation() {
 	svgVerve.style.cssText = 'transform:translateX(0px); transition:transform 1s ease 1.3s;';
 	svg360.style.cssText = 'transform:translateX(0px);opacity:1;transition:all 1s ease 1.3s;';
 	document.getElementById('small-circle').style.opacity = '1';
-	setTimeout(pageLoaded, 2300);
+	setTimeout(firstPageLoaded, 2000);
 }
 
 function pageLoading(){
@@ -79,7 +98,7 @@ function pageLoading(){
 	//loadingIndicator.style.cssText = 'display:inline-block;';
 	n.classList.remove('active');
 	nb.classList.remove('open');
-	b.classList.add('loading');
+	//b.classList.add('loading');
 	b.classList.remove('loaded');
 	//setupLogoAnimation(runLogoAnimation);
 }
@@ -88,27 +107,30 @@ function pageLoading(){
 	//b.classList.remove('animating-logo');
 //	b.classList.add('loaded');
 //}
-function pageLoaded(){
+function firstPageLoaded(){
 	//loadingIndicator.style.cssText = '-webkit-animation-name: fadeOut; animation-name: fadeOut;';
 	//b.classList.remove('animating-logo');
-	b.classList.remove('loading');
-	b.classList.add('loaded');
+	//b.classList.remove('loading');
+	b.classList.add('loaded', 'logo-animation-done');
 }
-
 document.addEventListener("DOMContentLoaded", pageLoading);
+
 window.onload = function(){
-	//if (window.location.pathname=='/'){
 		setupLogoAnimation();
-	//}
-	//else{
-		//pageLoaded();
-	//}
+		currentPageClass();
 };
 
+function currentPageClass(){
+	var cpdata = document.querySelectorAll("[data-current='current page']");
+	if (cpdata.length) {
+		cpdata[0].classList.add('current-page');
+	}
+}
+/*
 var pjax = new Pjax({
   elements: "a:not(.external)", // default is "a[href], form[action]"
   selectors: ["head title", ".main"],
-  cacheBust: false/*
+  cacheBust: false
 ,
   switches: {
 	  ".main": Pjax.switches.sideBySide
@@ -132,11 +154,13 @@ var pjax = new Pjax({
         }
         }
         }
-*/
+
 })
 
 document.addEventListener('pjax:send', pageLoading);
 document.addEventListener('pjax:complete', pageLoaded);
+*/
+
 const nb = document.getElementById('nav-toggle')
 const n = document.getElementById('nav');
 nb.addEventListener('click', toggleNav);
@@ -144,3 +168,26 @@ function toggleNav(){
 	n.classList.toggle('active');
 	nb.classList.toggle('open');
 }
+n.addEventListener('click', toggleNavItemClass, true);
+function toggleNavItemClass(e){
+	e.target.classList.toggle('current-page');
+}
+
+/*
+logo.addEventListener('click', removeNavItemClass);
+function removeNavItemClass(){
+	var cpclass = document.getElementsByClassName('current-page');
+	var cpdata = document.querySelectorAll("[data-current='current-page']");
+	
+	var curentPage = (cpclass) 
+	
+	if ( document.getElementsByClassName('current-page') ) {
+		var curentPage = document.getElementsByClassName('current-page')[0];
+	} else if ( document.querySelectorAll("[data-current='current-page']"); ) {
+	var curentPage = document.querySelectorAll("[data-current='current-page']");
+	}
+	if (curentPage){
+	document.getElementsByClassName('current-page')[0].classList.remove('current-page');
+	}
+}
+*/
