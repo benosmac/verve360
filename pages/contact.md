@@ -4,12 +4,8 @@ title: Contact
 permalink: /contact
 section: contact
 intro_paragraph: |-
+  Talk about your organisation’s challenges, find answers to address specific issues, discuss opportunities that you want to harness, we are ready to talk about what we can accomplish together.
+  
+hero-image: v360-2-header-bg.jpg
 
-  The contact form on this page uses
-  [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process
-  submissions, and saves them in your Netlify account where you can optionally
-  set up notifications. Each submission is passed through a spam filter and if
-  flagged, will display a CAPTCHA challenge to the user.
 ---
-
-**Send us a message**

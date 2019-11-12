@@ -81,6 +81,21 @@
   transform-origin: center bottom;
 }
 
+@keyframes up-down {
+	0%,100% {
+		transform: translate3d(0, 5px, 0);
+	}
+	50% {
+		transform: translate3d(0, -5px, 0);
+	}
+}
+.up-down{
+  -webkit-animation-name: up-down;
+  animation-name: up-down;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
 @-webkit-keyframes flash {
   from,
   50%,

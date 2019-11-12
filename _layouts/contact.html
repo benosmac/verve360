@@ -1,11 +1,14 @@
 ---
 layout: default
 ---
-
-<h2>{{ page.title }}</h2>
-
-{% include page-intro.html %}
-
+<div class="page-header hero-section" style="background-image:linear-gradient(0deg, rgba(66,39,144,.4) 0%,rgba(255,255,255,1) 100%),url(/assets/img/{{page.hero-image}});">
+<h2 class="page-header--title">{{ page.title }}</h2>
+<div id="particles"></div>
+</div>
+<div class="content">
+	<section class="content-col scroll fadeIn">
+	{{ page.intro_paragraph }}
 {{ content }}
-
-{% include contact-form.html %}
+	</section>
+	{% include contact-form.html %}
+</div>

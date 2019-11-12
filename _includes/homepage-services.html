@@ -48,3 +48,12 @@
   </li>
 {% endif %}
 </ul>
+
+<section class="page-cta green">
+	<span class="content-col scroll fadeIn">
+{% if page.services-cta and services.services-cta != '' %}
+    {{ page.services-cta | markdownify }}
+{% endif %}
+<a href="/contact" title="contact us" class="scroll bounceIn" data-wow-delay=".2s">Let's talk</a>
+</span>
+</section>

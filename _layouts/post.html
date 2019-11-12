@@ -3,8 +3,16 @@ layout: default
 ---
 {% assign author = site.data.authors[page.author] %}
 
-<h2>{{ page.title }}</h2>
+<div class="page-header hero-section" style="background-image:linear-gradient(0deg, rgba(66,39,144,.4) 0%,rgba(255,255,255,1) 100%),url(/assets/img/v360-1-header-bg.jpg);">
+<h2 class="page-header--title">{{ page.title }}</h2>
 
+<span class="page-header--intro">
+{% include page-intro.html %}
+</span>
+
+<div id="particles"></div>
+</div>
+<article class="content-col">
 <time datetime="{{ page.date }}">
   <small>
     <strong>{{ page.date | date_to_string }}</strong>
@@ -14,10 +22,9 @@ layout: default
   </small>
 </time>
 
-{% include page-intro.html %}
-
 {{ content }}
-
+</article>
+<div class="content-col">
 <nav aria-label="Adjacent Posts">
   <ul>
     {% if page.previous.url %}
@@ -32,3 +39,4 @@ layout: default
     {% endif %}
   </ul>
 </nav>
+</div>

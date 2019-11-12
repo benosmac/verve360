@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About
-permalink: /about
+permalink: /about-us
 section: about
 about-intro: >-
   Verve360 was founded with a simple purpose:
@@ -96,5 +96,10 @@ about-p5: >-
   
   
   ...to help you achieve long-term sustainable growth.
+  
+cta: >-
+  ### Ready to be empowered?
+  
+  We love to offer you a free one-hour advisory session to explore how to accelerate and achieve sustainable growth.
 ---
 

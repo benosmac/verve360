@@ -1,0 +1,77 @@
+
+<div class="page-header about-header hero-section">
+	  <h2 class="page-header--title">About You</h2>
+	  
+	{% if page.customers_subheading and page.customers_subheading != '' %}
+	<span class="page-header--intro">
+      {{ page.customers_subheading | markdownify }}
+      </span>
+    {% endif %}
+<!--
+	  <img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
+<img class="circle" id="c2" data-speed=".4" data-direction="up" src="/assets/img/v360-circle.svg">
+<img class="circle" id="c3" data-speed=".6" data-direction="up" src="/assets/img/v360-circle.svg">
+-->
+<div id="particles"></div>
+  </div>
+<div class="content">
+<section class="content-col">
+{% if page.customers_intro and page.customers_intro != '' %}
+  <h4 class="center no-padding scroll fadeIn" data-wow-delay=".8s">
+    {{ page.customers_intro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </h4>
+{% endif %}
+</section>
+<section class="customers-questions dark-grey">
+	<div class="customers-questions--title purple right-to-bottom-triangle scroll slideInLeft">
+<h3>Your business:</h3>
+	</div>
+	<div class="customers-questions--list" data-wow-delay=".8s">
+		<ul class="customers_list scroll fadeIn">
+		{% if page.customers_scenarios and page.customers_scenarios != '' %}
+		  {% for scenario in page.customers_scenarios %}
+		  <li class="customers_list-item">
+		    {{ scenario.content}}
+		  </li>
+		  {% endfor %}
+		{% endif %}
+		</ul>
+	</div>
+</section>
+<!--
+<section class="customers-outro">
+{% if page.customers_ontro and page.customers_ontro != '' %}
+  <p class="scroll fadeIn" data-wow-delay=".4s">
+    {{ page.customers_ontro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+<span>
+<h3 class="scroll fadeIn">Book your free 1-hour advisory session now!</h3>
+<a href="contact" title="contact us" class="scroll bounceIn" data-wow-delay=".6s">Contact Us</a>
+</span>
+</section>
+-->
+
+<section class="family">
+<div class="content-col">
+	<h2 class="section-header"><span class="scroll fadeIn">Our Family of Growth.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">Your Family</span></h2>
+{% if page.family_intro and page.family_intro != '' %}
+  <p class="family_intro scroll fadeIn" data-wow-delay=".8s">
+    {{ page.family_intro | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+{% endif %}
+</div>
+<ul class="family_list">
+{% if page.family and page.family != '' %}
+  {% for member in page.family %}
+  <li class="family_list-item scroll fadeInUp">
+    <a title="{{ member.title }}" href="{{ member.url }}" target="_blank">
+    <img src="{{ member.logo }}">
+    </a>
+  </li>
+  {% endfor %}
+{% endif %}
+</ul>
+</section>
+{% include page-cta.html %}
+</div>

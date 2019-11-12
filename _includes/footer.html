@@ -1,5 +1,27 @@
-<footer>
+<footer class="purple">
+	<section class="footer-col footer-col--contact">
+		<h3>Let's talk</h3>
+		<a href="mailto:hello@verve360.com.au">hello@verve360.com.au</a>
+		<p>Book your free one-hour advisory session</p>
+		<a class="button button--blank-white" href="/contact">Book now</a>
+	</section>
+	
+	<section class="footer-col footer-col--explore">
+		<h3>Let's explore</h3>
+		<ul>
+			<li><a href="/advisory">Advisory</a></li>
+			<li><a href="/branding">Branding</a></li>
+			<li><a href="/marketing">Marketing</a></li>
+			<li><a href="/employee-connection">Employee Connection</a></li>
+		</ul>
+	</section>
 
+	<section class="footer-col footer-col--newsletter">
+		<h3>Let's be inspired</h3>
+		<input type="email" placeholder="Email">
+		<input type="submit" title="Submit">
+	</section>
 
-<script src="{{ "/assets/js/app.js" | relative_url }}"></script>
+<span class="copyright">&copy; {{ "now" | date: "%Y" }} Verve360</span>
 </footer>
+<script src="{{ "/assets/js/app.js" | relative_url }}"></script>

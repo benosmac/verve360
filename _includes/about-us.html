@@ -1,5 +1,5 @@
 
-  <div class="page-header about-header hero-section">
+<div class="page-header about-header hero-section">
 	  <h2 class="page-header--title">About us</h2>
 	  
 	{% if page.about-intro and page.about-intro != '' %}
@@ -7,11 +7,14 @@
       {{ page.about-intro | markdownify }}
       </span>
     {% endif %}
+<!--
 	  <img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
 <img class="circle" id="c2" data-speed=".4" data-direction="up" src="/assets/img/v360-circle.svg">
 <img class="circle" id="c3" data-speed=".6" data-direction="up" src="/assets/img/v360-circle.svg">
+-->
+<div id="particles"></div>
   </div>
-
+<div class="content">
 {% if page.about-p1 and page.about-p1 != '' %}
 <section class="page-section">
 	<div class="content-col scroll fadeIn">
@@ -21,7 +24,7 @@
 {% endif %}
 
 {% if page.about-p2 and page.about-p2 != '' %}
-<section class="page-section grey">
+<section class="page-section white">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p2 | markdownify }}
   </div>
@@ -43,7 +46,7 @@
 </section>
 
 {% if page.about-p3 and page.about-p3 != '' %}
-<section class="page-section">
+<section class="page-section white">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p3 | markdownify }}
   </div>
@@ -51,7 +54,7 @@
 {% endif %}
 
 {% if page.about-p4 and page.about-p4 != '' %}
-<section class="page-section grey">
+<section class="page-section">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p4 | markdownify }}
   </div>
@@ -59,9 +62,11 @@
 {% endif %}
 
 {% if page.about-p5 and page.about-p5 != '' %}
-<section class="page-section">
+<section class="page-section white">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p5 | markdownify }}
 	</div>
 </section>
 {% endif %}
+{% include page-cta.html %}
+</div>

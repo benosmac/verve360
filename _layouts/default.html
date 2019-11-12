@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-current="{{ page.section }}" lang="en">
+<html lang="en">
 
   {% include head.html %}
 
@@ -11,7 +11,7 @@ layout: compress
 
     {% include header.html %}
 
-    <main id="main" class="page-transition--fade">
+    <main id="main" class="page-transition--fade" data-current="{{ page.section }}">
 
       {{ content }}
 

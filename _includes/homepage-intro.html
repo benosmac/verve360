@@ -1,5 +1,5 @@
-<section class="home-intro">
-	<div class="home-intro--questions right-to-bottom-triangle scroll slideInLeft">
+<section class="home-intro dark-grey" id="intro">
+	<div class="home-intro--questions purple right-to-bottom-triangle scroll slideInLeft">
 {% if page.questions and page.questions != '' %}
     {{ page.questions | markdownify }}
 {% endif %}
@@ -15,4 +15,13 @@
     {{ page.third_paragraph | markdownify }}
 {% endif %}
 	</div>
+</section>
+
+<section class="page-cta green">
+	<span class="content-col scroll fadeIn">
+{% if page.intro-cta and page.intro-cta != '' %}
+    {{ page.intro-cta | markdownify }}
+{% endif %}
+<a href="/contact" title="contact us" class="scroll bounceIn" data-wow-delay=".2s">Let's talk</a>
+</span>
 </section>

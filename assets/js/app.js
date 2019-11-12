@@ -1,14 +1,39 @@
+// Constants (not affected by Swup page loads)
+const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+const b = document.getElementById('body');
+const logo = document.getElementById("stroke-logo");
+const svgDrawingPaths = document.querySelectorAll(".text-stroke");
+const svgVerve = document.getElementById("svgVerve");
+const svg360 = document.getElementById("svg360");
+const svgCirclePaths = document.querySelectorAll(".big-circle");
+const nb = document.getElementById('nav-toggle');
+
+
+// Set up Swup
 const swupOptions = {
   animateHistoryBrowsing: false,
   animationSelector: '[class*="page-transition-"]',
-  containers: ["#main"],
+  containers: ["#main", '#nav'],
   linkSelector:
     'a[href^="' +
     window.location.origin +
-    '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
+    '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup])'
+};
+// Initialise Swup
+const swup = new Swup(swupOptions);
+
+
+// Loading Events
+
+document.addEventListener("DOMContentLoaded", pageLoading);
+
+window.onload = function(){
+		setupLogoAnimation();
+		v360init();
 };
 
-const swup = new Swup(swupOptions);
+swup.on('contentReplaced', v360init);
+
 swup.on('animationOutDone', function(){
 	pageLoading();
 });
@@ -16,25 +41,132 @@ swup.on('animationInDone', function(){
 	b.classList.add('loaded');
 });
 
-window.onscroll = function(){backgroundColorScroll('services', ['services-1','services-2','services-3','services-4']),backgroundColorScroll('beliefs', ['beliefs-1','beliefs-2','beliefs-3','beliefs-4','beliefs-5','beliefs-6']), scrollParralax()};
+function v360init(){
+	
+	// Set scroll position back to top
+	window.scrollTo(0, 0);
+	
+	// Scroll Events
+	
+	window.onscroll = function(){
+		if (document. getElementById('services')){
+			backgroundColorScroll('services', ['services-1','services-2','services-3','services-4']);
+		}
+		if (document. getElementById('beliefs')){
+			backgroundColorScroll('beliefs', ['beliefs-1','beliefs-2','beliefs-3','beliefs-4','beliefs-5','beliefs-6']);
+		}
+		scrollParralax();
+	};
+		
+	// Click events
+	
+	nb.addEventListener('click', toggleNav);
+	var subnav = document.querySelectorAll('.has-subitems > a');
+	for (var i = 0; i < subnav.length; i++) {
+    	subnav[i].addEventListener('click', toggleMobileSubnav, false);
+	}
+	
+	// Carosel
+	if (document.querySelectorAll('.slides').length){
+		const slides = new Siema({
+		  selector: '.slides',
+		  duration: 500,
+		  easing: 'ease-out',
+		  perPage: 1,
+		  startIndex: 0,
+		  draggable: true,
+		  multipleDrag: true,
+		  threshold: 20,
+		  loop: true,
+		  rtl: false,
+		  onInit: () => {},
+		  onChange: () => {},
+		});
+		const prev = document.getElementById('previous-slide');
+		const next = document.getElementById('next-slide');
+		const slideTimer = setInterval(() => slides.next(), 5000);
+		prev.addEventListener('click', () => prevSlide(slides, slideTimer));
+		next.addEventListener('click', () => nextSlide(slides, slideTimer));
+	}
+	
+	//Particles.js
+	if(document.getElementById('particles')){
+	particlesJS("particles", {
+  particles: {
+    number: { value: 30, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
+      polygon: { nb_sides: 5 },
+      image: { src: "img/github.svg", width: 100, height: 100 }
+    },
+    opacity: {
+      value: .5,
+      random: true,
+      anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: { enable: false, speed: 4, size_min: 0.3, sync: false }
+    },
+    line_linked: {
+      enable: false,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: .3,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 600 }
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false, mode: "bubble" },
+      onclick: { enable: false, mode: "push" },
+      resize: true
+    },
+    modes: {
+      grab: { distance: 400, line_linked: { opacity: 1 } },
+      bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
+      repulse: { distance: 400, duration: 0.4 },
+      push: { particles_nb: 4 },
+      remove: { particles_nb: 2 }
+    }
+  },
+  retina_detect: true
+});
+}
+		
+}
 
 // Change the background-color of a parent element when child elements are in the middle of the viewport.
 // Params: 
 //   wrapper: ID of parent element
-//   elements: an array of unique child class names
-const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+//   elements: an array of child class names
+
 function backgroundColorScroll(wrapper, elements) {
-	// calculate half the height of the viewport so we can trigger colour changes when an element reaches this point
-	var o = vh / 2;
+	// calculate 2/3 the height of the viewport so we can trigger colour changes when an element reaches this point
+	var o = vh * .75;
 	// parent element
 	var w = document.getElementById(wrapper);
 	let els = elements;
-	for (const el of els){
+	for (var el of els){
 		//find the elements current vertical offset from the top of the viewport
 		var e = document.getElementById(el);
 		if (e !== null){
 			var elOffset = e.getBoundingClientRect().top;
-			// if the element is between the middle and the bottom of the viewport, change the class that controls the background-color property.
+			// if the element is in the bottom third of the viewport, change the class that controls the background-color property.
 			if ( elOffset < o && elOffset > 0){
 				w.className = 'color-' + el;
 				e.classList.add('visible');
@@ -45,10 +177,9 @@ function backgroundColorScroll(wrapper, elements) {
 	}
 }
 
-const b = document.getElementById('body');
-function scrollParralax(){
+// Control parralax scrolling effect on elements with [data-speed] attributes
+function scrollParralax() {
 	var parallaxEls = document.querySelectorAll("[data-speed]");
-	//b.classList.add('scrolled');
 	if (this.pageYOffset < vh){
 	for (const parallaxEl of parallaxEls) {
 		parallaxEl.classList.add('scrolled');
@@ -58,136 +189,77 @@ function scrollParralax(){
 	  }
 	  }
 }
-//const loadingScreen = document.getElementById("loading-screen");
-const logo = document.getElementById("stroke-logo");
-//const loadingIndicator = document.getElementById("loading-circle");
-const svgDrawingPaths = document.querySelectorAll(".text-stroke");
-const svgVerve = document.getElementById("svgVerve");
-const svg360 = document.getElementById("svg360");
-const svgCirclePaths = document.querySelectorAll(".big-circle");
 
+// Calculate and set initial styles for SVG logo animation
 function setupLogoAnimation(){
-	//b.classList.add('animating-logo');
 	logo.style.cssText = 'display:inline-block;';
 	i = 0;
 	for (const path of svgDrawingPaths){
 		i++;
 		var strokeOffset = path.getTotalLength();
-		var isUpperCircle = (path.classList.contains('big-circle--top')) ? '-' : '' ;
-		path.style.cssText = 'stroke-dashoffset: ' + isUpperCircle + strokeOffset + 'px; stroke-dasharray: ' + strokeOffset + 'px; transition-delay:' + i * 70 + 'ms;';
+		path.style.cssText = 'stroke-dashoffset: ' + strokeOffset + 'px; stroke-dasharray: ' + strokeOffset + 'px; transition-delay:' + i * 0 + 'ms;';
 	}
 	svgVerve.style.cssText = 'transform:translateX(50px);';
 	setTimeout(runLogoAnimation, 100);
 }
+
+// Run SVG logo animation
 function runLogoAnimation() {
-	//b.classList.remove('loading');
 	for (const path of svgDrawingPaths){
 	path.style.strokeDashoffset = '0px';
 	}
 	for (const cPath of svgCirclePaths){
-		cPath.style.cssText = 'stroke-dashoffset: 0; transition-delay: 2000ms;';
+		cPath.style.cssText = 'stroke-dashoffset: 0; transition-delay: 1200ms;';
 	}
-	svgVerve.style.cssText = 'transform:translateX(0px); transition:transform 1s ease 1.3s;';
-	svg360.style.cssText = 'transform:translateX(0px);opacity:1;transition:all 1s ease 1.3s;';
+	svgVerve.style.cssText = 'transform:translateX(0px); transition:transform 1s ease .8s;';
+	svg360.style.cssText = 'transform:translateX(0px);opacity:1;transition:all 1s ease .8s;';
 	document.getElementById('small-circle').style.opacity = '1';
 	setTimeout(firstPageLoaded, 2000);
 }
 
+// Reset state classes while new page loading
 function pageLoading(){
-	//logoAnimation.style.cssText = 'display:none;';
-	//loadingIndicator.style.cssText = 'display:inline-block;';
+	var n = document.getElementById('nav');
 	n.classList.remove('active');
 	nb.classList.remove('open');
-	//b.classList.add('loading');
 	b.classList.remove('loaded');
-	//setupLogoAnimation(runLogoAnimation);
 }
-//function frontPageLoaded(){
-	//logoAnimation.style.cssText = '-webkit-animation-name: fadeOut; animation-name: fadeOut;';
-	//b.classList.remove('animating-logo');
-//	b.classList.add('loaded');
-//}
+
+// Apply classes for fully loaded page
+// Only run on initial page load, after logo animation finishes
 function firstPageLoaded(){
-	//loadingIndicator.style.cssText = '-webkit-animation-name: fadeOut; animation-name: fadeOut;';
-	//b.classList.remove('animating-logo');
-	//b.classList.remove('loading');
 	b.classList.add('loaded', 'logo-animation-done');
 }
-document.addEventListener("DOMContentLoaded", pageLoading);
 
-window.onload = function(){
-		setupLogoAnimation();
-		currentPageClass();
-};
-
-function currentPageClass(){
-	var cpdata = document.querySelectorAll("[data-current='current page']");
-	if (cpdata.length) {
-		cpdata[0].classList.add('current-page');
-	}
-}
-/*
-var pjax = new Pjax({
-  elements: "a:not(.external)", // default is "a[href], form[action]"
-  selectors: ["head title", ".main"],
-  cacheBust: false
-,
-  switches: {
-	  ".main": Pjax.switches.sideBySide
-  },
-  switchesOptions: {
-	  ".main": {
-		classNames: {
-	    // class added to the old element being replaced, e.g. a fade out
-        remove: "animated animated.reverse animate.fast",
-        // class added to the new element that is replacing the old one, e.g. a fade in
-        add: "animated",
-        // class added on the element when navigating back
-        backward: "animate slideInRight",
-        // class added on the element when navigating forward (used for new page too)
-        forward: "animate slideInLeft"
-        }
-  },
-        callbacks: {
-        removeElement: function(el) {
-          el.style.marginLeft = "-" + (el.getBoundingClientRect().width/2) + "px"
-        }
-        }
-        }
-
-})
-
-document.addEventListener('pjax:send', pageLoading);
-document.addEventListener('pjax:complete', pageLoaded);
-*/
-
-const nb = document.getElementById('nav-toggle')
-const n = document.getElementById('nav');
-nb.addEventListener('click', toggleNav);
+// Open / Close nav on mobile devices
 function toggleNav(){
+	var n = document.getElementById('nav');
 	n.classList.toggle('active');
 	nb.classList.toggle('open');
 }
-n.addEventListener('click', toggleNavItemClass, true);
-function toggleNavItemClass(e){
-	e.target.classList.toggle('current-page');
+
+// Open / Close subnav on mobile devices
+function toggleMobileSubnav(e){
+	var clicked = e.target.parentElement;
+	var current = document.querySelectorAll(".is-open");
+	
+	if (clicked.classList.contains('is-open')){
+		clicked.classList.remove('is-open');
+	} else if (current.length){
+			current[0].classList.remove('is-open');
+			clicked.classList.add('is-open');
+	} else {
+		clicked.classList.add('is-open');
+	}
+	e.preventDefault(); e.stopPropagation();
 }
 
-/*
-logo.addEventListener('click', removeNavItemClass);
-function removeNavItemClass(){
-	var cpclass = document.getElementsByClassName('current-page');
-	var cpdata = document.querySelectorAll("[data-current='current-page']");
-	
-	var curentPage = (cpclass) 
-	
-	if ( document.getElementsByClassName('current-page') ) {
-		var curentPage = document.getElementsByClassName('current-page')[0];
-	} else if ( document.querySelectorAll("[data-current='current-page']"); ) {
-	var curentPage = document.querySelectorAll("[data-current='current-page']");
-	}
-	if (curentPage){
-	document.getElementsByClassName('current-page')[0].classList.remove('current-page');
-	}
+// Carosel controls
+function prevSlide(slides, slideTimer){
+	slides.prev();
+	clearInterval(slideTimer);
 }
-*/
+function nextSlide(slides, slideTimer){
+	slides.next();
+	clearInterval(slideTimer);
+}

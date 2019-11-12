@@ -61,29 +61,19 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Intro Questions", name: "questions", widget: "markdown", required: false}
           - {label: "Intro Paragraph", name: "second_paragraph", widget: "markdown", required: false}
           - {label: "Why grow?", name: "third_paragraph", widget: "markdown", required: false}
+          - {label: "Intro CTA", name: "intro-cta", widget: "markdown", required: false}
           - {label: "Services intro", name: "services_intro", widget: "markdown", required: false}
           - {label: "Advisory & Coaching", name: "advisory", widget: "markdown", required: false}
           - {label: "Strategic Branding", name: "branding", widget: "markdown", required: false}
           - {label: "Sales, Marketing & Communication", name: "sales", widget: "markdown", required: false}
           - {label: "Employee Alignment & Connection", name: "employee_alignment", widget: "markdown", required: false}
-          - {label: "Customers intro", name: "customers_intro", widget: "markdown", required: false}
-          - {label: "Customers - scenarios", name: "customers_scenarios", widget: "list", required: false, field: {label: Content, name: content, widget: string}}
-          - {label: "Customers outro", name: "customers_ontro", widget: "markdown", required: false}
+          - {label: "Services CTA", name: "services-cta", widget: "markdown", required: false}
           - {label: "Cohesion", name: "cohesion", widget: "markdown", required: false}
           - {label: "Collaboration", name: "collaboration", widget: "markdown", required: false}
           - {label: "Clarity", name: "clarity", widget: "markdown", required: false}
           - {label: "Value", name: "value", widget: "markdown", required: false}
           - {label: "Hearts & Minds", name: "hearts", widget: "markdown", required: false}
           - {label: "Standing Out", name: "standingout", widget: "markdown", required: false}
-          - {label: "Family of Growth - Intro", name: "family_intro", widget: "markdown", required: false}
-          - label: "Family of Growth"
-            name: "family"
-            widget: "list"
-            required: false
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: URL, name: url, widget: string}
-              - {label: Logo, name: logo, widget: image}
           - {label: "Testimonials - Intro", name: "testimonials_intro", widget: "markdown", required: false}
           - label: "Testimonials"
             name: "testimonials"
@@ -110,4 +100,28 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "About us - Content", name: "about-p3", widget: "markdown", required: false}
           - {label: "About us - Content", name: "about-p4", widget: "markdown", required: false}
           - {label: "About us - Content", name: "about-p5", widget: "markdown", required: false}
-      
+          - {label: "CTA", name: "cta", widget: "markdown", required: false}
+       - label: "About You"
+        name: "about-you"
+        permalink: "/about-you"
+        layout: "page"
+        section: "about-you"
+        file: "pages/about-you.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+          - {label: "About You - Subheading", name: "customer_subheading", widget: "markdown", required: false}
+          - {label: "About You - Intro", name: "customers_intro", widget: "markdown", required: false}
+          - {label: "About You - Scenarios", name: "customers_scenarios", widget: "list", required: false, field: {label: Content, name: content, widget: string}}
+          - {label: "About You - Outro", name: "customers_ontro", widget: "markdown", required: false}
+          - {label: "Family of Growth - Intro", name: "family_intro", widget: "markdown", required: false}
+          - label: "Family of Growth"
+            name: "family"
+            widget: "list"
+            required: false
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: URL, name: url, widget: string}
+              - {label: Logo, name: logo, widget: image}
+          - {label: "CTA", name: "cta", widget: "markdown", required: false}

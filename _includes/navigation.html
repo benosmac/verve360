@@ -1,8 +1,8 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 <ul>
 {% for item in include.navigation %}
-  <li>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}>{{ item.text }}</a>
+  <li {% if item.subitems %} class="has-subitems" {% endif %}>
+    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %} {% if item.subitems %}data-no-swup{% endif %}>{{ item.text }}{% if item.subitems %} &#x2304;{% endif %}</a>
     {% if item.subitems %}
       {% include navigation.html navigation=item.subitems %}
     {% endif %}

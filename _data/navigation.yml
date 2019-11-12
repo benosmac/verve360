@@ -1,10 +1,24 @@
 # specify main menu items here
 
-- text: What we do
-  url: /services
-- text: About us
-  url: /about
-- text: Resources
+- text: What
+  url: /advisory
+  subitems:
+  - text: Advisory and Coaching
+    url: /advisory
+  - text: Strategic Branding
+    url: /branding
+  - text: Marketing and Communication
+    url: /marketing
+  - text: Employee Connection
+    url: /employee-connection
+- text: Who
+  url: /about-us
+  subitems:
+  - text: About Us
+    url: /about-us
+  - text: About You
+    url: /about-you
+- text: Insights
   url: /blog
 - text: Let's talk
   url: /contact

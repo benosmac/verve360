@@ -1,33 +1,62 @@
-<svg id="stroke-logo" class="animated" style="display:none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 498 227">
+<svg id="stroke-logo" class="animated" style="display:none;"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 498 227">
   <defs>
     <linearGradient id="linear-gradient" x1="108" y1="171.47" x2="334.14" y2="171.47" gradientTransform="matrix(1, 0, 0, -1, 0, 228)" gradientUnits="userSpaceOnUse">
       <stop offset="0.13" stop-color="#fff" stop-opacity="0"/>
       <stop offset="0.95" stop-color="#5dba4d"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="108" y1="58.4" x2="334.14" y2="58.4" xlink:href="#linear-gradient"/>
+        <linearGradient id="linear-gradient-2" x1="108" y1="56.53" x2="334.14" y2="56.53" gradientUnits="userSpaceOnUse">
+      <stop offset="0.13" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.95" stop-color="#5dba4d"/>
+    </linearGradient>
   </defs>
   <title>v360-stroke</title>
 <g id="svgVerve">
 <!-- V -->
+<!--
 <line class="text-stroke draw-strokes" x1="30.5" y1="144.5" x2="3" y2="83.2"/>
 <line class="text-stroke draw-strokes" x1="58.2" y1="83.2" x2="30.5" y2="144.5"/>
+-->
 <!-- E -->
+<!--
 <line class="text-stroke draw-strokes" x1="77.6" y1="83.8" x2="77.6" y2="145"/>
 <line class="text-stroke draw-strokes" x1="112.7" y1="83.8" x2="77.6" y2="83.8"/>
 <line class="text-stroke draw-strokes" x1="77.7" y1="113.9" x2="108" y2="113.9"/>
 <line class="text-stroke draw-strokes" x1="77.6" y1="145" x2="112.7" y2="145"/>
+-->
 <!-- R -->
+<!--
 <line class="text-stroke draw-strokes" x1="136.05" y1="145.36" x2="136.05" y2="83.81"/>
 <path class="text-stroke draw-strokes" d="M136.05,118.46h22.84c9.41,0,17.76-7.75,17.76-17.27,0-9.09-8.51-17.36-17.76-17.36H136"/>
 <line class="text-stroke draw-strokes" x1="174.77" y1="145.36" x2="160.71" y2="118.36"/>
+-->
 <!-- V -->
+<!--
 <line class="text-stroke draw-strokes" x1="219.8" y1="144.5" x2="192.3" y2="83.2"/>
 <line class="text-stroke draw-strokes" x1="247.5" y1="83.2" x2="219.8" y2="144.5"/>
+-->
 <!-- E -->
+<!--
 <line class="text-stroke draw-strokes" x1="266.8" y1="113.9" x2="297.2" y2="113.9"/>
 <line class="text-stroke draw-strokes" x1="266.9" y1="145" x2="302" y2="145"/>
 <line class="text-stroke draw-strokes" x1="266.9" y1="83.8" x2="266.9" y2="145"/>
 <line class="text-stroke draw-strokes" x1="302" y1="83.8" x2="266.9" y2="83.8"/>
+-->
+
+  <path class="text-stroke draw-strokes" d="M30.5,144.5,3,83.2" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M58.2,83.2,30.5,144.5" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M77.6,83.8V145" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M112.7,83.8H77.6" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M77.7,113.9H108" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M77.6,145h35.1" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M136.05,145.36V83.81" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M136.05,118.46h22.84c9.41,0,17.76-7.75,17.76-17.27,0-9.09-8.51-17.36-17.76-17.36H136" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M174.77,145.36l-14.06-27" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M219.8,144.5,192.3,83.2" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M247.5,83.2l-27.7,61.3" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M266.8,113.9h30.4" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M266.9,145H302" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M266.9,83.8V145" transform="translate(0 0)"/>
+  <path class="text-stroke draw-strokes" d="M302,83.8H266.9" transform="translate(0 0)"/>
 </g>
 
 <!-- 360 -->
@@ -43,7 +72,8 @@
 	c0.1-10.6-8.3-19.3-18.9-19.4c-0.2,0-0.3,0-0.5,0c-12,0-19,8.7-20.7,11.2"/>
 </g>
 <!-- Big Circle -->	
-<path class="big-circle big-circle--top draw-strokes" d="M116,113.07a105.07,105.07,0,0,1,210.14,0"/>
+<path class="big-circle big-circle--top draw-strokes" d="M326.14,113.07a105.07,105.07,0,0,0-210.14,0"/>
+
 <path class="big-circle draw-strokes" d="M326.14,113.07a105.07,105.07,0,0,1-210.14,0"/>
 <!-- Small Circle -->	
 <circle id="small-circle" cx="326.1" cy="113.1" r="4.9"/>

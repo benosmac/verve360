@@ -3,21 +3,23 @@ $text-color: rgb(40,40,40);
 $text-color-negative: white;
 $brand-color: rgb(65,175,45);
 $link-color: $brand-color;
-$link-hover-color: darken($brand-color, 10%);
+$link-hover-color: lighten($link-color, 5%);
 $grey-bg-color: rgb(243,243,243);
 $hairline-color: rgb(230,230,230);
 $selection-bg-color: rgba(65,175,45,0.5);
-$light-grey: rgba(0,0,0,.1);
-$purple: rgb(66,39,144);
+$light-grey: #eee;
+$purple: #422790;
+$black: #0b0618;
+$dark-grey: #1d1140;
 
 // typographic defaults
 $base-font: franklin-gothic-urw,sans-serif;
-$heading-font: nimbus-sans,sans-serif;
+$heading-font: lato,sans-serif;
 $code-font: Courier, monospace;
 $base-font-size: 62.5%;
-$base-font-weight: 300;
-$bold-font-weight: 600;
-$base-line-height: 1.5;
+$base-font-weight: 400;
+$bold-font-weight: 700;
+$base-line-height: 1.6;
 
 // viewport breakpoints
 $xs: 480px;

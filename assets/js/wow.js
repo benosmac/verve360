@@ -156,7 +156,7 @@
   };
 
   getComputedStyleRX = /(\-([a-z]){1})/g;
-  var vo = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) / 4;
+  var vo = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) / 5;
   this.WOW = (function() {
     WOW.prototype.defaults = {
       boxClass: 'scroll',
