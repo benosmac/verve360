@@ -102,7 +102,7 @@ function v360init(){
       image: { src: "img/github.svg", width: 100, height: 100 }
     },
     opacity: {
-      value: .5,
+      value: .7,
       random: true,
       anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
     },
@@ -120,7 +120,7 @@ function v360init(){
     },
     move: {
       enable: true,
-      speed: .3,
+      speed: 1,
       direction: "none",
       random: true,
       straight: false,
