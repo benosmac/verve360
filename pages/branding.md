@@ -5,7 +5,7 @@ permalink: /branding
 section: branding
 intro_paragraph: |-
 
-hero-image: v360-1-header-bg.jpg
+hero-image: header-branding.jpg
 
 cta: >-
   ### Start now

@@ -8,11 +8,17 @@
   <script src="{{ "/assets/js/siema.min.js" | relative_url }}"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
   <script>
-    new WOW().init();
+    new WOW({ callback: afterReveal }).init();
+    function afterReveal (el) {
+	el.addEventListener('animationend', function () {
+		el.classList.add('animation-ended');
+	});
+}
   </script>
   {% if jekyll.environment == 'production' and site.analytics %}
     {% include analytics.html %}
   {% endif %}
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <link rel="stylesheet" href="https://use.typekit.net/hav8zqw.css">
+<!--   <link rel="stylesheet" href="https://use.typekit.net/hav8zqw.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Barlow:500,500i|Roboto:300,300i,500&display=swap" rel="stylesheet">
 </head>

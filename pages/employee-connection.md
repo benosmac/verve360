@@ -5,7 +5,7 @@ permalink: /employee-connection
 section: employee-connection
 intro_paragraph: |-
 
-hero-image: v360-2-header-bg.jpg
+hero-image: header-employee_connection.jpg
 
 cta: >-
   ### Start now

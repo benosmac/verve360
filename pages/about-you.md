@@ -3,6 +3,7 @@ layout: about-you
 title: About You
 permalink: /about-you
 section: about-you
+hero-image: header-about_you.jpg
 customers_subheading: >-
   Inspire. Instil. Invigorate. 
 customers_intro: |-

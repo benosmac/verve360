@@ -1,14 +1,14 @@
-<section class="services-intro content-col bottom-triangle">
-	<h2 class="section-header"><span class="scroll fadeIn">Our Services.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">Your solutions</span></h2>
+<section class="section-intro">
+	<h2 class="section-intro--header"><span class="scroll fadeIn">Our Services.</span> <span class="highlight scroll fadeIn" data-wow-delay=".5s">Your solutions</span></h2>
 {% if page.services_intro and page.services_intro != '' %}
-  <p class="services_intro scroll fadeIn" data-wow-delay=".8s">
+  <p class="section-intro--content scroll fadeIn" data-wow-delay=".8s">
     {{ page.services_intro | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
 </section>
 <ul class="icon_list" id="services">
 {% if page.advisory and page.advisory != '' %}
-  <li class="icon_list-item" id="services-1">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Advisory</h3>
     <p>{{ page.advisory | markdownify | remove: '<p>' | remove: '</p>' }}</p>
@@ -18,7 +18,7 @@
   </li>
 {% endif %}
 {% if page.branding and page.branding != '' %}
-  <li class="icon_list-item" id="services-2">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Strategic Branding</h3>
     <p>{{ page.branding | markdownify | remove: '<p>' | remove: '</p>' }}</p>
@@ -28,7 +28,7 @@
   </li>
 {% endif %}
 {% if page.sales and page.sales != '' %}
-  <li class="icon_list-item" id="services-3">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Sales, Marketing & Communication</h3>
     <p>{{ page.sales | markdownify | remove: '<p>' | remove: '</p>' }}</p>
@@ -38,7 +38,7 @@
   </li>
 {% endif %}
 {% if page.employee_alignment and page.employee_alignment != '' %}
-  <li class="icon_list-item" id="services-4">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Employee Alignment & Connection</h3>
     <p>{{ page.employee_alignment | markdownify | remove: '<p>' | remove: '</p>' }}</p>

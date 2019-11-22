@@ -1,57 +1,57 @@
-<section class="beliefs content-col bottom-triangle">
-	<h2 class="section-header"><span class="scroll fadeIn">Our Beliefs.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">Your Success</span></h2>
+<section class="beliefs section-intro">
+	<h2 class="section-intro--header"><span class="scroll fadeIn">Our Beliefs.</span> <span class="highlight scroll fadeIn" data-wow-delay=".5s">Your Success</span></h2>
 </section>
 	<ul id="beliefs" class="icon_list">
 {% if page.cohesion and page.cohesion != '' %}
-  <li class="icon_list-item" id="beliefs-1">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
-  <h3>We believe in cohesion</h3>
-    <p>{{ page.cohesion | markdownify }}</p>
+  <h3>Cohesion</h3>
+    {{ page.cohesion | markdownify }}
   </span>
     <span class="icon_list-icon"> {% include icons/world.svg %} </span>
   </li>
 {% endif %}
 {% if page.collaboration and page.collaboration != '' %}
-  <li class="icon_list-item" id="beliefs-2">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
-  <h3>We believe in collaboration</h3>
-    <p>{{ page.collaboration | markdownify }}</p>
+  <h3>Collaboration</h3>
+    {{ page.collaboration | markdownify }}
   </span>
     <span class="icon_list-icon">{% include icons/reload.svg %}</span>
   </li>
 {% endif %}
 {% if page.clarity and page.clarity != '' %}
-  <li class="icon_list-item" id="beliefs-3">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
-  <h3>We believe in clarity</h3>
-    <p>{{ page.clarity | markdownify }}</p>
+  <h3>Clarity</h3>
+    {{ page.clarity | markdownify }}
   </span>
     <span class="icon_list-icon">{% include icons/target.svg %}</span>
   </li>
 {% endif %}
 {% if page.value and page.value != '' %}
-  <li class="icon_list-item" id="beliefs-4">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
-  <h3>We believe in value</h3>
-    <p>{{ page.value | markdownify }}</p>
+  <h3>Value</h3>
+    {{ page.value | markdownify }}
   </span>
     <span class="icon_list-icon">{% include icons/stats-up.svg %}</span>
   </li>
 {% endif %}
 {% if page.hearts and page.hearts != '' %}
-  <li class="icon_list-item" id="beliefs-5">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
-  <h3>We believe in hearts & minds</h3>
-    <p>{{ page.hearts | markdownify }}</p>
+  <h3>Hearts & minds</h3>
+    {{ page.hearts | markdownify }}
   </span>
     <span class="icon_list-icon">{% include icons/heart.svg %}</span>
   </li>
 {% endif %}
 {% if page.standingout and page.standingout != '' %}
-  <li class="icon_list-item" id="beliefs-6">
+  <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
-  <h3>We believe in standing out instead of fitting in</h3>
-    <p>{{ page.standingout | markdownify }}</p>
+  <h3>Standing out instead of fitting in</h3>
+    {{ page.standingout | markdownify }}
   </span>
     <span class="icon_list-icon">{% include icons/flag.svg %}</span>
   </li>

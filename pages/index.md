@@ -3,6 +3,7 @@ layout: home
 permalink: /
 title: Welcome
 section: home
+hero-image: header-home.jpg
 headline: |-
   Unleash potential.
   
@@ -12,7 +13,10 @@ headline: |-
 intro_paragraph: >-
   A purpose-driven business consulting agency, we inspire small and medium
   businesses to accelerate and achieve sustainable growth.
-questions: |-   
+questions: |-
+  ### As your growth partner, we are here to put an end to the problems you're facing in your business today.
+    
+    
   #### Is your business suffering from growing pains?
   
   
@@ -21,8 +25,6 @@ questions: |-
   
   #### Are you worried you're getting left by the wayside by your competitors?
 second_paragraph: |-
-  As your growth partner, we are here to put an end to the problems you're facing in your business today.
-
   We listen intently, lead with questions, not answers, create agile strategies, develop affordable solutions, accelerate implementation.
 
   **We turn your vision into exceptional results and deliver success beyond profit.**
@@ -70,14 +72,14 @@ services-cta: >-
   We'd love to offer you a free one-hour advisory session to explore how to turn your challenges into opporunities.
 
 cohesion: >-
-  **Doing things right to create unity, inside and out.**
+  **We believe in doing things right to create unity, inside and out.**
 
    Firstly, we build strength from the inside-out by unifying your purpose, vision and strategic goals. Then we develop a clear strategy for you. Finally, we align your sales, marketing, communication and internal employee connection strategies to your vision and purpose.
    
     We make it easier for your customers to buy and your staff to sell.
 
 collaboration: >-
-  **Working together to achieve shared goals**
+  **We believe in working together to achieve shared goals**
 
 
   To win new customers and keep your existing ones, we believe that the most effective way is to truly understand what they need and want. The most efficient way of doing this is through genuine collaboration, where we harness each other’s comparative advantage, share ideas and knowledge and have an authentic and open partnership.
@@ -85,7 +87,7 @@ collaboration: >-
 
   True collaboration improves your bottom line.
 clarity: >-
-  **Being precise and easy to understand.**
+  **We believe in being precise and easy to understand.**
 
 
   We ensure your messaging speaks to your customers’ needs, with a singular
@@ -95,7 +97,7 @@ clarity: >-
 
   Clarity puts you on the path to success.
 value: >-
-  **Giving you value for money, taking the spotlight off the price.**
+  **We believe in giving you value for money, taking the spotlight off the price.**
 
 
   Price is important. Value even more so. We are empathetic to your business
@@ -105,7 +107,7 @@ value: >-
 
   We enable you to achieve more, consistently and at a lower cost.
 hearts: >-
-  **Balancing what you think and how you feel.**
+  **We believe in balancing what you think and how you feel.**
 
 
   Unlike some agencies who focus on creativity and intuition and others who focus on logic and the facts, we are one of only a handful of agencies that focus on both hearts and minds. By using rational persuasion, we create, change and embed the perception of your organisation, products and services in people’s minds. We also use emotional connection to influence how people think and feel about who you are and what you do.
@@ -114,7 +116,7 @@ hearts: >-
   The benefit – A balanced approach to capture a bigger market share
 standingout: >-
 
-  **Towering above the rest.**
+  **We believe in towering above the rest.**
 
 
   Conforming makes you just like the others and in this small, crowded and competitive Australian market, it’s a risk your business can’t afford to take. If customers can’t see what makes you unique to the others, then you are invisible. It’s our job to help you be bold and show and prove how you’re different and better than the rest.

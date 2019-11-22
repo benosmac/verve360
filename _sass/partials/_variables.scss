@@ -13,12 +13,13 @@ $black: #0b0618;
 $dark-grey: #1d1140;
 
 // typographic defaults
-$base-font: franklin-gothic-urw,sans-serif;
-$heading-font: lato,sans-serif;
+$base-font: 'Roboto', sans-serif; 
+$heading-font: 'Barlow', sans-serif;
 $code-font: Courier, monospace;
 $base-font-size: 62.5%;
-$base-font-weight: 400;
-$bold-font-weight: 700;
+$base-font-weight: 300;
+$bold-font-weight: 500;
+$heading-font-weight: 500;
 $base-line-height: 1.6;
 
 // viewport breakpoints
@@ -26,4 +27,4 @@ $xs: 480px;
 $sm: 768px;
 $md: 992px;
 $lg: 1240px;
-$xl: 1920px;
+$xl: 1400px;

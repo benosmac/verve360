@@ -47,16 +47,47 @@ function v360init(){
 	window.scrollTo(0, 0);
 	
 	// Scroll Events
+	const scrollUp = "scroll-up";
+	const scrollDown = "scroll-down";
+	let lastScroll = 0;
+	var timeout;
+	window.addEventListener("scroll", () => {
+		if(timeout){
+			window.cancelAnimationFrame(timeout);
+		}
+		timeout = window.requestAnimationFrame(function(){
+			const currentScroll = window.pageYOffset;
+			if (currentScroll == 0) {
+				b.classList.remove(scrollUp);
+				return;
+			}
+			
+			if (currentScroll > lastScroll && !b.classList.contains(scrollDown)) {
+				// down
+				b.classList.remove(scrollUp);
+				b.classList.add(scrollDown);
+			} else if (currentScroll < lastScroll && b.classList.contains(scrollDown)) {
+				// up
+				b.classList.remove(scrollDown);
+				b.classList.add(scrollUp);
+			}
+			lastScroll = currentScroll;
+		});
+	});
 	
+/*
 	window.onscroll = function(){
 		if (document. getElementById('services')){
 			backgroundColorScroll('services', ['services-1','services-2','services-3','services-4']);
+			//iconListBackground('services');
 		}
 		if (document. getElementById('beliefs')){
 			backgroundColorScroll('beliefs', ['beliefs-1','beliefs-2','beliefs-3','beliefs-4','beliefs-5','beliefs-6']);
+			//iconListBackground('beliefs');
 		}
-		scrollParralax();
+		//scrollParralax();
 	};
+*/
 		
 	// Click events
 	
@@ -90,6 +121,7 @@ function v360init(){
 	}
 	
 	//Particles.js
+/*
 	if(document.getElementById('particles')){
 	particlesJS("particles", {
   particles: {
@@ -147,6 +179,7 @@ function v360init(){
   retina_detect: true
 });
 }
+*/
 		
 }
 
@@ -166,14 +199,28 @@ function backgroundColorScroll(wrapper, elements) {
 		var e = document.getElementById(el);
 		if (e !== null){
 			var elOffset = e.getBoundingClientRect().top;
-			// if the element is in the bottom third of the viewport, change the class that controls the background-color property.
+			// if the element is in the bottom third of the viewport
 			if ( elOffset < o && elOffset > 0){
-				w.className = 'color-' + el;
+				//var wHeight = w.clientHeight;
+				//var mid = wHeight / 2;
+				//var offset = w.getBoundingClientRect().top + mid;
+				//opacity = offset / wHeight;
+				//w.style.backgroundColor = 'rgba(66,39,144,' + opacity + ')';
 				e.classList.add('visible');
 			}
 		} else {
 			break;
 		}
+	}
+}
+
+function iconListBackground(wrapper){
+	var w = document.getElementById(wrapper);
+	var offset = w.getBoundingClientRect().top;
+	
+		o = offset / vh;
+		if (o > 0 && o < 1){
+		w.style.opacity = o;
 	}
 }
 
@@ -234,7 +281,7 @@ function firstPageLoaded(){
 // Open / Close nav on mobile devices
 function toggleNav(){
 	var n = document.getElementById('nav');
-	n.classList.toggle('active');
+	b.classList.toggle('nav-open');
 	nb.classList.toggle('open');
 }
 

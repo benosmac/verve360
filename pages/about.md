@@ -3,6 +3,8 @@ layout: about
 title: About
 permalink: /about-us
 section: about
+hero-image: header-about_us.jpg
+
 about-intro: >-
   Verve360 was founded with a simple purpose:
   

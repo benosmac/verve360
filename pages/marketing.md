@@ -5,7 +5,7 @@ permalink: /marketing
 section: marketing
 intro_paragraph: |-
 
-hero-image: v360-2-header-bg.jpg
+hero-image: header-marketing.jpg
 
 cta: >-
   ### Start now

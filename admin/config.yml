@@ -28,6 +28,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "John Doe", value: "john_doe" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Header Image", name: "hero-image", widget: "image", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
     # PAGES
@@ -54,6 +55,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "pages/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Hero Image", name: "hero-image", widget: "hidden", default: "header-home.jpg"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Headline", name: "headline", widget: "markdown", required: false}
@@ -90,6 +92,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "pages/about.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Hero Image", name: "hero-image", widget: "hidden", default: "header-about.jpg"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "About us - Intro", name: "about-intro", widget: "markdown", required: false}
@@ -109,6 +112,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "pages/about-you.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Hero Image", name: "hero-image", widget: "hidden", default: "header-about_you.jpg"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "About You - Subheading", name: "customer_subheading", widget: "markdown", required: false}

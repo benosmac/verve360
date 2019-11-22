@@ -5,7 +5,7 @@ permalink: /advisory
 section: advisory
 intro_paragraph: |-
 
-hero-image: v360-1-header-bg.jpg
+hero-image: header-advisory.jpg
 
 cta: >-
   ### Ready to be empowered?
