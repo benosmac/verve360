@@ -333,6 +333,7 @@ main {
   grid-column: full;
   display: grid;
   grid-template-columns: repeat(12,1fr);
+  overflow: hidden;
  // padding-top: 8rem;
  // padding-bottom: 8rem;
   @media screen and (min-width: $md) {
