@@ -60,6 +60,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Headline", name: "headline", widget: "markdown", required: false}
           - {label: "Header Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "Scenarios list", name: "customers_scenarios", widget: "list", required: false, field: {label: Content, name: content, widget: string}}
+          - {label: "Scenarios - Paragraph", name: "customers_p", widget: "markdown", required: false}
+          - {label: "How do we do it?", name: "customers_outro", widget: "markdown", required: false}
           - {label: "Intro Questions", name: "questions", widget: "markdown", required: false}
           - {label: "Intro Paragraph", name: "second_paragraph", widget: "markdown", required: false}
           - {label: "Why grow?", name: "third_paragraph", widget: "markdown", required: false}
@@ -117,8 +120,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "About You - Subheading", name: "customer_subheading", widget: "markdown", required: false}
           - {label: "About You - Intro", name: "customers_intro", widget: "markdown", required: false}
-          - {label: "About You - Scenarios", name: "customers_scenarios", widget: "list", required: false, field: {label: Content, name: content, widget: string}}
-          - {label: "About You - Outro", name: "customers_ontro", widget: "markdown", required: false}
           - {label: "Family of Growth - Intro", name: "family_intro", widget: "markdown", required: false}
           - label: "Family of Growth"
             name: "family"

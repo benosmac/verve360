@@ -1,17 +1,14 @@
-<section class="customers content-col">
-	<h2 class="section-header"><span class="scroll fadeIn">Our Customers.</span> <span class="highlight scroll fadeInRight" data-wow-delay=".4s">You</span></h2>
+<section class="customers-questions dark-grey">
+	<div class="customers-questions--title purple right-to-bottom-triangle scroll slideInLeft">
 {% if page.customers_intro and page.customers_intro != '' %}
-  <p class="customers_intro scroll fadeIn" data-wow-delay=".8s">
+  <h3 class="center no-padding">
     {{ page.customers_intro | markdownify | remove: '<p>' | remove: '</p>' }}
-  </p>
+  </h3>
 {% endif %}
-</section>
-<section class="customers-questions">
-	<div class="customers-questions--title right-to-bottom-triangle--black scroll slideInLeft">
-<h3>Your business:</h3>
 	</div>
-	<div class="customers-questions--list scroll fadeIn" data-wow-delay=".8s">
-		<ul class="customers_list">
+	<div class="customers-questions--list" data-wow-delay=".8s">
+		<h3 class="no-padding">Your business:</h3>
+		<ul class="customers_list scroll fadeIn">
 		{% if page.customers_scenarios and page.customers_scenarios != '' %}
 		  {% for scenario in page.customers_scenarios %}
 		  <li class="customers_list-item">
@@ -20,16 +17,28 @@
 		  {% endfor %}
 		{% endif %}
 		</ul>
+		{% if page.customers_p and page.customers_p != '' %}
+		  <h4>
+		    {{ page.customers_p | markdownify | remove: '<p>' | remove: '</p>' }}
+		  </h4>
+		{% endif %}
 	</div>
 </section>
-<section class="customers-outro">
-{% if page.customers_ontro and page.customers_ontro != '' %}
-  <p class="scroll fadeIn" data-wow-delay=".4s">
-    {{ page.customers_ontro | markdownify | remove: '<p>' | remove: '</p>' }}
+<section class="customers-outro content-col scroll fadeIn" data-wow-delay=".4s">
+	<h3>How do we do it?</h3>
+{% if page.customers_outro and page.customers_outro != '' %}
+  <p>
+    {{ page.customers_outro | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}
-<span>
-<h3 class="scroll fadeIn">Book your free 1-hour advisory session now!</h3>
-<a href="contact" title="contact us" class="scroll bounceIn" data-wow-delay=".6s">Contact Us</a>
+</section>
+<section class="page-cta green">
+	<span class="content-col scroll fadeIn">
+{% if page.intro-cta and page.intro-cta != '' %}
+    {{ page.intro-cta | markdownify }}
+{% endif %}
+<a href="/contact" title="contact us" class="scroll bounceIn" data-wow-delay=".2s">Let's talk</a>
 </span>
 </section>
+
+

@@ -73,6 +73,35 @@ function v360init(){
 				b.classList.add(scrollUp);
 			}
 			lastScroll = currentScroll;
+			
+/*
+			var belowHeader;
+			var hero = document.getElementById('hero');
+			if(!hero){
+				return;
+			} else {
+				hOffset = hero.getBoundingClientRect().top;
+				console.log(hOffset);
+				if(hOffset <= 0){
+					belowHeader = true;
+				} else {
+					belowHeader = false;
+				}
+				if(belowHeader === true){
+					if (b.classList.contains('scrolled')){
+						return;
+					} else {
+						b.classList.add('scrolled');
+					}
+				}
+				if(belowHeader === false){
+					if (b.classList.contains('scrolled')){
+						b.classList.remove('scrolled');
+					}
+					return;
+				}
+			}
+*/
 		});
 	});
 	

@@ -9,8 +9,8 @@ $hairline-color: rgb(230,230,230);
 $selection-bg-color: rgba(65,175,45,0.5);
 $light-grey: #eee;
 $purple: #422790;
-$black: #0b0618;
-$dark-grey: #1d1140;
+$black: darken(#0b0618, 10%);
+$dark-grey: lighten($black, 20%);
 
 // typographic defaults
 $base-font: 'Roboto', sans-serif; 

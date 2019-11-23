@@ -23,7 +23,7 @@
 	display: grid;
 	grid-template-columns: inherit;
 	grid-column: 1 / 13;
-	padding: 15rem 0 9rem 0;
+	padding: 16rem 0 8rem 0;
 	//margin-top: -150px;
 	//z-index: -1;
 	//opacity: 0;
@@ -33,6 +33,7 @@
 		background-position: center;
 	}
 }
+
 .home-header{
 	//opacity: 0;
 	min-height: 100vh;
@@ -172,6 +173,13 @@
 }
 
 /*
+.loaded.scrolled{
+	.home-header--headline, .home-header--intro, .home-header--cta{
+		opacity: 0;
+	}
+}
+*/
+/*
 .circle{
 	position: absolute;
 	width: 200px;
@@ -246,7 +254,7 @@ header > nav{
 }
 .is-animating{
 	header{
-		opacity: 0;
+		//opacity: 0;
 		
 	}
 }
@@ -803,18 +811,17 @@ li.icon_list-item,li.family_list-item,li.testimonials_list-item, .posts li{
 		flex-basis: 100%;
 		padding: 4rem;
 		//background: $light-grey;
-					@media(min-width:$sm){
-				flex-basis: 67%;
-			}
+		@media(min-width:$sm){
+			flex-basis: 67%;
+		}
 		ul{
 			list-style: none;
-			
 			padding: 2rem 0;
-
-			
+			//border-bottom: 2px solid $brand-color;
+			//margin-bottom: 2rem;
 			li{
 				margin-left: 0;
-				margin-bottom: 1rem;
+				//margin-bottom: 1rem;
 				font-size: 1.4rem;
 				&:before{
 					content:'\02713';
