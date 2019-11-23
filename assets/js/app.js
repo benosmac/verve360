@@ -7,6 +7,7 @@ const svgVerve = document.getElementById("svgVerve");
 const svg360 = document.getElementById("svg360");
 const svgCirclePaths = document.querySelectorAll(".big-circle");
 const nb = document.getElementById('nav-toggle');
+const html = document.documentElement;
 
 
 // Set up Swup
@@ -38,13 +39,13 @@ swup.on('animationOutDone', function(){
 	pageLoading();
 });
 swup.on('animationInDone', function(){
+	//add loaded class to trigger transitions
 	b.classList.add('loaded');
+	// set smooth scroll behaviour
+	//html.style.cssText = "scroll-behavior: smooth;";
 });
 
 function v360init(){
-	
-	// Set scroll position back to top
-	window.scrollTo(0, 0);
 	
 	// Scroll Events
 	const scrollUp = "scroll-up";
@@ -121,7 +122,7 @@ function v360init(){
 	}
 	
 	//Particles.js
-/*
+
 	if(document.getElementById('particles')){
 	particlesJS("particles", {
   particles: {
@@ -179,7 +180,6 @@ function v360init(){
   retina_detect: true
 });
 }
-*/
 		
 }
 
@@ -266,10 +266,19 @@ function runLogoAnimation() {
 
 // Reset state classes while new page loading
 function pageLoading(){
-	var n = document.getElementById('nav');
-	n.classList.remove('active');
+	//var n = document.getElementById('nav');
+	// Close the nav panel
+	b.classList.remove('nav-open');
+	// Set nav button back to closed state
 	nb.classList.remove('open');
+	// Remove loaded styles for transitions
 	b.classList.remove('loaded');
+	//unset smooth scroll behaviour before resetting scroll position
+	//html.style.cssText = "scroll-behavior: auto;";
+	// Set scroll position back to top
+	window.scrollTo(0, 0);
+	//reset smooth scroll behaviour before resetting scroll position
+	//html.style.cssText = "scroll-behavior: smooth;";
 }
 
 // Apply classes for fully loaded page
@@ -279,10 +288,11 @@ function firstPageLoaded(){
 }
 
 // Open / Close nav on mobile devices
-function toggleNav(){
+function toggleNav(e){
 	var n = document.getElementById('nav');
 	b.classList.toggle('nav-open');
 	nb.classList.toggle('open');
+	e.preventDefault(); e.stopPropagation();
 }
 
 // Open / Close subnav on mobile devices

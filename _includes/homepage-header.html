@@ -1,4 +1,4 @@
-<section class="hero-section home-header">
+<section class="hero-section home-header" style="background-image:linear-gradient(0deg, rgba(66,39,144,.5) 0%,rgba(0,0,0,1) 100%),url(/assets/img/{{page.hero-image}});">
 {% if page.headline and page.headline != '' %}
   <h2 class="hero-section--headline home-header--headline">
     {{ page.headline | markdownify }}
@@ -10,8 +10,8 @@
   </p>
 {% endif %}
 <ul class="home-header--cta">
-<li><a href="#services-1">Learn more</a></li>
-<li><a href="#contact">Talk to us</a></li>
+<li><a href="#services-overview">Learn more</a></li>
+<li><a href="/contact">Talk to us</a></li>
 </ul>
 <!--
 <img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
@@ -22,5 +22,5 @@
 {% include /svg/down-arrow.svg %}
 </a>
 </section>
-<!-- <div id="particles"></div> -->
+<div id="particles"></div>
 
