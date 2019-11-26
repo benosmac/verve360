@@ -55,7 +55,8 @@ cta: >-
   * creative and design
   * brand Identity
   * visual language
-  * photography and art direction   communication design
+  * photography and art direction   
+  * communication design
   * brand guidelines
   * brand launch
   * brand activation

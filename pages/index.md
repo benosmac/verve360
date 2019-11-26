@@ -10,9 +10,17 @@ headline: |-
   Harness opportunities.
   
   Accelerate **growth.**
-
+intro_paragraph: >-
+  A purpose-driven business consulting agency, we inspire small and medium
+  businesses to accelerate and achieve sustainable growth.
 customers_intro: |-
-  Does any of the following sound like your business?
+  **WE UNDERSTAND** that different growth levers need to be activated at various stages of growth, so we adjust our scope and processes accordingly.
+  
+  **WE LISTEN** first. We lead with questions, not answers.
+  
+  **WE CREATE** agile strategies, develop affordable solutions and accelerate implementation.
+  
+  **WE DELIVER** success beyond profit and turn your dreams into reality.
 customers_scenarios:
   - content: idea is worth pursuing and you are ready to start up
   - content: has a solid foundation and now you are ready to scale up
@@ -24,37 +32,6 @@ customers_scenarios:
   - content: is not growing fast enough
 customers_p: >-
   No matter where you are in your growth stage, we have a solution to help alleviate the problems you are facing.
-customers_outro: >-
-  We understand that different growth levers need to be activated at various stages of growth, so we adjust our scope and processes accordingly.
-  
-  We listen intently, lead with questions, not answers, create agile strategies, develop affordable solutions, accelerate implementation.
-  
-  #### We turn your vision into exceptional results and deliver success beyond profit.
-
-intro_paragraph: >-
-  A purpose-driven business consulting agency, we inspire small and medium
-  businesses to accelerate and achieve sustainable growth.
-questions: |-
-  ### As your growth partner, we are here to put an end to the problems you're facing in your business today.
-    
-    
-  #### Is your business suffering from growing pains?
-  
-  
-  #### Are you looking for effective ways to attract more business, sales, customers?
-  
-  
-  #### Are you worried you're getting left by the wayside by your competitors?
-second_paragraph: |-
-  We listen intently, lead with questions, not answers, create agile strategies, develop affordable solutions, accelerate implementation.
-
-  **We turn your vision into exceptional results and deliver success beyond profit.**
-third_paragraph: >-
-  ### Why grow?
-  
-  Most businesses define growth as an increment in revenue, profit or size. To us, growth is much more than that; it’s also about value, importance and relevance.
-
-  Ignorance is bliss... by turning away from change, you will be left in the wake of social evolution, no matter how big or strong your business is.
 intro-cta: >-
   ### Ready to turn your dreams into reality?
 services_intro: >-
@@ -69,22 +46,22 @@ advisory: >-
   and personalities, to accelerate your business’s growth path.
 branding: >-
   We provide clarity of the foundational ‘essence’ of your brand:
-    - Who you are
-    - What you stand for 
+    - Who you are and what you stand for
     - How, where and for whom in the market
     - Why you are the best at what you do
+
   We tell your brand story and ensure your brand promise comes to life and stays
   intact throughout the customer lifecycle.
 sales: >-
   We help you win and retain more customers, turn your customers into your brand
-  advocates and minimise customer churn, through aligning sales and marketing
+  advocates and minimise customer churn. We do this by aligning sales and marketing
   processes, integrating marketing and communication activities, evaluating and
   understanding your market and customers, being responsive and adaptive.
 employee_alignment: >-
   We partner with you in identifying and developing employee alignment and
-  engagement; internal branding and communication programs to inform, motivate
-  and inspire your employees to embrace your brand, align to your culture and be
-  the advocates to your business.  
+  engagement; internal branding and communication programs to inform, motivate and
+  inspire your employees to embrace your brand, align to your culture and be the
+  advocates to your business..  
   
   Remember, happy employees = happy customers = healthy profit.
 services-cta: >-
@@ -159,7 +136,17 @@ testimonials:
 
              I recommend him to any business owner who wants to cut through the hype of marketing, create an aligned internal and external brand, to achieve excellent outcomes.
     name: David Markus, Founder and Director, Combo
-  - content: Testimonial from Consortio.
+  - content: >- 
+             Martin is a pleasure to work with and always delivers to an exceptionally high standard.
+             
+             
+             He consults impeccably to understand organisational challenges and needs, then brings innovative and practical ideas and solutions to the table. He will challenge your thinking, provide you with alternative perspectives and, where appropriate, actively mentor/coach/advise you to come up with a solution as a team.
+             
+             
+             I know from first-hand experience that he delivers exceptional results that demonstrates outstanding value for money.
+
+
+             Martin is passionate and personable, always engaging and motivating, ensures our sales and marketing, as well as people and culture strategies are firmly aligned to our business goals.
     name: Mike Paine, Chief Executive Officer, Consortio
   - content: Testimonial from Graeme Neville
     name: Graeme Neville, Chairman, Carrington King

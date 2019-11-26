@@ -11,7 +11,7 @@
   <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Advisory</h3>
-    <p>{{ page.advisory | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <p>{{ page.advisory | markdownify }}</p>
     <a title="Advisory" href="/advisory">Learn More</a>
   </span>
     <span class="icon_list-icon"> {% include icons/handshake.svg %} </span>
@@ -21,7 +21,7 @@
   <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Strategic Branding</h3>
-    <p>{{ page.branding | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <p>{{ page.branding | markdownify }}</p>
     <a title="Strategic Branding" href="/strategic-branding">Learn More</a>
   </span>
     <span class="icon_list-icon"> {% include icons/bulb.svg %} </span>
@@ -31,7 +31,7 @@
   <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Sales, Marketing & Communication</h3>
-    <p>{{ page.sales | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <p>{{ page.sales | markdownify }}</p>
     <a title="Sales, Marketing & Communication" href="/sales-marketing-communication">Learn More</a>
   </span>
     <span class="icon_list-icon"> {% include icons/Bullhorn.svg %} </span>
@@ -41,7 +41,7 @@
   <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
   	<h3>Employee Alignment & Connection</h3>
-    <p>{{ page.employee_alignment | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <p>{{ page.employee_alignment | markdownify }}</p>
     <a title="Employee Alignment & Connection" href="/employee_alignment_connection">Learn More</a>
   </span>
     <span class="icon_list-icon"> {% include icons/network.svg %} </span>

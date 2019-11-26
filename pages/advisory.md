@@ -35,5 +35,7 @@ cta: >-
   * Small group coaching
   * Executive mentoring
   * Business growth driven advice
-  * Strategic business planning Workshop facilitation
-  * Purpose, vision and values workshop Business, Marketing and Sales sounding board
+  * Strategic business planning 
+  * Workshop facilitation
+  * Purpose, vision and values workshop 
+  * Business, Marketing and Sales sounding board

@@ -5,5 +5,5 @@ permalink: /blog
 section: blog
 intro_paragraph: >
 
-hero-image: header-hands.jpg
+hero-image: header-resources.jpg
 ---

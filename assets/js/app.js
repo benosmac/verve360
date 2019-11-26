@@ -74,6 +74,7 @@ function v360init(){
 			}
 			lastScroll = currentScroll;
 			
+			iconListBackground('homepage-sections');
 /*
 			var belowHeader;
 			var hero = document.getElementById('hero');
@@ -244,12 +245,14 @@ function backgroundColorScroll(wrapper, elements) {
 }
 
 function iconListBackground(wrapper){
-	var w = document.getElementById(wrapper);
-	var offset = w.getBoundingClientRect().top;
-	
-		o = offset / vh;
-		if (o > 0 && o < 1){
-		w.style.opacity = o;
+	const w = document.getElementById(wrapper);
+	if(w){
+		const wHeight = w.offsetHeight;
+		var offsetT = w.getBoundingClientRect().top;
+			o = (wHeight + offsetT) / wHeight;
+			if (o > 0 && o < 1){
+			w.style.backgroundColor = 'rgba(66, 39, 144,' + o + ')';
+		}
 	}
 }
 
@@ -295,7 +298,9 @@ function runLogoAnimation() {
 
 // Reset state classes while new page loading
 function pageLoading(){
-	//var n = document.getElementById('nav');
+	console.log(window.location.hash);
+	//show the nav bar
+	b.classList.remove('scroll-down');
 	// Close the nav panel
 	b.classList.remove('nav-open');
 	// Set nav button back to closed state
@@ -305,7 +310,10 @@ function pageLoading(){
 	//unset smooth scroll behaviour before resetting scroll position
 	//html.style.cssText = "scroll-behavior: auto;";
 	// Set scroll position back to top
-	window.scrollTo(0, 0);
+	if(!window.location.hash){
+		console.log('scrolling');
+		window.scrollTo(0, 0);
+	}
 	//reset smooth scroll behaviour before resetting scroll position
 	//html.style.cssText = "scroll-behavior: smooth;";
 }
@@ -321,6 +329,7 @@ function toggleNav(e){
 	var n = document.getElementById('nav');
 	b.classList.toggle('nav-open');
 	nb.classList.toggle('open');
+	b.classList.remove('scroll-down');
 	e.preventDefault(); e.stopPropagation();
 }
 

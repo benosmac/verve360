@@ -1,14 +1,7 @@
-<section class="customers-questions dark-grey">
-	<div class="customers-questions--title purple right-to-bottom-triangle scroll slideInLeft">
-{% if page.customers_intro and page.customers_intro != '' %}
-  <h3 class="center no-padding">
-    {{ page.customers_intro | markdownify | remove: '<p>' | remove: '</p>' }}
-  </h3>
-{% endif %}
-	</div>
-	<div class="customers-questions--list" data-wow-delay=".8s">
-		<h3 class="no-padding">Your business:</h3>
-		<ul class="customers_list scroll fadeIn">
+<section id="intro" class="customers-questions white">
+	<div class="customers-questions--list scroll fadeIn">
+		<h3>Your business:</h3>
+		<ul class="customers_list">
 		{% if page.customers_scenarios and page.customers_scenarios != '' %}
 		  {% for scenario in page.customers_scenarios %}
 		  <li class="customers_list-item">
@@ -23,14 +16,12 @@
 		  </h4>
 		{% endif %}
 	</div>
-</section>
-<section class="customers-outro content-col scroll fadeIn" data-wow-delay=".4s">
-	<h3>How do we do it?</h3>
-{% if page.customers_outro and page.customers_outro != '' %}
-  <p>
-    {{ page.customers_outro | markdownify | remove: '<p>' | remove: '</p>' }}
-  </p>
-{% endif %}
+	<div class="customers-questions--solutions  grey scroll fadeIn" data-wow-delay=".33s">
+		<h3>Our approach:</h3>
+		{% if page.customers_intro and page.customers_intro != '' %}
+		    {{ page.customers_intro | markdownify }}
+		{% endif %}
+	</div>
 </section>
 <section class="page-cta green">
 	<span class="content-col scroll fadeIn">

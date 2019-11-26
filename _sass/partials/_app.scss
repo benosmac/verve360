@@ -411,8 +411,9 @@ footer {
   grid-template-columns: repeat(12,1fr);
  // background-color: $grey-bg-color;
   
-  a,a:visited{
+  a:not(.button),a:visited:not(.button){
 	  text-decoration: none;
+	  color: $black;
   }
   ul>li{
 	  list-style: none;
@@ -454,7 +455,8 @@ footer {
 	  input[type="email"]{
 		padding: 6px;
 	    margin-bottom: 2rem;
-	    border: 2px solid #fff;
+	    //background: $light-grey;
+	   // border: 1px solid $black;
 	  }
   }
   .copyright{
