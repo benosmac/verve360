@@ -11,7 +11,8 @@ cta: >-
   ### Ready to be empowered?
   
   We'd love to offer you a free one-hour advisory session to explore how to accelerate and achieve sustainable growth.
-body: >-
+
+service-body: >-
   The Verve360 advisory and coaching program is about helping you leverage your talents and personalities to accelerate your business and professional success.
   
   

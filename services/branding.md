@@ -13,7 +13,7 @@ cta: >-
   
   We'd love to offer you a free one-hour brand audit session.
 
-body: >-
+service-body: >-
   Therefore, every brand requires a clear, cohesive and authentic narrative. It needs to engage the hearts and minds of your audience, to form lasting and meaningful connections and encourage loyalty and trust.
   
   

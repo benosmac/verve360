@@ -20,7 +20,7 @@ cta: >-
   ### Start now
   
   We'd love to offer you a free one-hour marketing audit session.
-body: >-
+service-body: >-
   Marketing is about building valuable relationships to guarantee lasting customers. It is mind share; from implanting your brand into your customer’s mind, putting it at the top of their thoughts, leading your customer to take the leap and encouraging them never to look back. We're here to make that happen.
 
   

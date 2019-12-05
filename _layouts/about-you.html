@@ -6,9 +6,9 @@ layout: default
 <div class="page-header about-header hero-section" {% include hero-section.html %}>
 	  <h2 class="page-header--title">About You</h2>
 	  
-	{% if page.customers_subheading and page.customers_subheading != '' %}
+	{% if page.customer_subheading and page.customer_subheading != '' %}
 	<span class="page-header--intro">
-      {{ page.customers_subheading | markdownify }}
+      {{ page.customer_subheading | markdownify }}
       </span>
     {% endif %}
 <!--

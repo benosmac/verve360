@@ -12,6 +12,8 @@ publish_mode: editorial_workflow # Enable drafts
 collections: # A list of collections the CMS should be able to edit
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    editor:
+      preview: false
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
@@ -32,6 +34,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "string", required: false}
     # SERVICES
   - name: "service"
+    editor:
+      preview: false
     label: "Services"
     folder: "services"
     sort: "title:asc"
@@ -43,13 +47,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Body", name: "service-body", widget: "markdown", required: false}
       - {label: "Lists - 1", name: "list1", widget: "markdown", required: false}
       - {label: "Lists - 2", name: "list2", widget: "markdown", required: false}
       - {label: "Lists - 3", name: "list3", widget: "markdown", required: false}
       - {label: "Call to action", name: "cta", widget: "markdown", required: false}
     # UNIQUE PAGES
   - name: "page"
+    editor:
+      preview: false
     label: "Page"
     files:
       - label: "Homepage"
@@ -91,6 +97,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Homepage CTA", name: "home-cta", widget: "markdown", required: false}
       - label: "About"
         name: "about"
+        editor:
+          preview: false
         permalink: "/about"
         layout: "page"
         section: "about"
@@ -100,7 +108,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Hero Image", name: "hero-image", widget: "hidden", default: "header-about.jpg"}
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-          - {label: "About us - Intro", name: "about-intro", widget: "markdown", required: false}
+          - {label: "About us - Subheading", name: "about-intro", widget: "markdown", required: false}
           - {label: "About us - Content", name: "about-p1", widget: "markdown", required: false}
           - {label: "About us - Content", name: "about-p2", widget: "markdown", required: false}
           - {label: "About us - Content", name: "about-we-are", widget: "markdown", required: false}
@@ -111,6 +119,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "CTA", name: "cta", widget: "markdown", required: false}
       - label: "About You"
         name: "about-you"
+        editor:
+          preview: false
         permalink: "/about-you"
         layout: "page"
         section: "about-you"
