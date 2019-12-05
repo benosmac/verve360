@@ -158,6 +158,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Subheading", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
           - {label: "CTA", name: "cta", widget: "markdown", required: false}
       - label: "Contact"
         name: "contact"
@@ -173,4 +174,5 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Permalink", name: "permalink", widget: "hidden"}
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Introduction", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
           - {label: "CTA", name: "cta", widget: "markdown", required: false}      
