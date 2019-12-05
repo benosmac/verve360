@@ -31,23 +31,23 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
     # SERVICES
- - name: "service"
-   label: "Services"
-     folder: "services"
-     sort: "title:asc"
-     create: false
-     slug: "{{slug}}"
-     fields:
-       - {label: "Layout", name: "layout", widget: "hidden", default: "service"}
-       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-       - {label: "Permalink", name: "permalink", widget: "hidden"}
-       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
-       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-       - {label: "Body", name: "body", widget: "markdown", required: false}
-       - {label: "Lists - 1", name: "list1", widget: "markdown", required: false}
-       - {label: "Lists - 2", name: "list2", widget: "markdown", required: false}
-       - {label: "Lists - 3", name: "list3", widget: "markdown", required: false}
-       - {label: "Call to action", name: "cta", widget: "markdown", required: false}
+  - name: "service"
+    label: "Services"
+    folder: "services"
+    sort: "title:asc"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "service"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Permalink", name: "permalink", widget: "hidden"}
+      - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
+      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Lists - 1", name: "list1", widget: "markdown", required: false}
+      - {label: "Lists - 2", name: "list2", widget: "markdown", required: false}
+      - {label: "Lists - 3", name: "list3", widget: "markdown", required: false}
+      - {label: "Call to action", name: "cta", widget: "markdown", required: false}
     # UNIQUE PAGES
   - name: "page"
     label: "Page"
