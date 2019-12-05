@@ -109,7 +109,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "About us - Content", name: "about-p4", widget: "markdown", required: false}
 #           - {label: "About us - Content", name: "about-p5", widget: "markdown", required: false}
           - {label: "CTA", name: "cta", widget: "markdown", required: false}
-       - label: "About You"
+      - label: "About You"
         name: "about-you"
         permalink: "/about-you"
         layout: "page"
