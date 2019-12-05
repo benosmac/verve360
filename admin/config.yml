@@ -144,3 +144,33 @@ collections: # A list of collections the CMS should be able to edit
               - {label: URL, name: url, widget: string}
               - {label: Logo, name: logo, widget: image}
           - {label: "CTA", name: "cta", widget: "markdown", required: false}
+      - label: "Martin Foon"
+        name: "growth-leader"
+        editor:
+          preview: false
+        permalink: "/growth-leader"
+        layout: "page"
+        section: "growth-leader"
+        file: "pages/martin-foon.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Hero Image", name: "hero-image", widget: "hidden", default: "header-about_you.jpg"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+          - {label: "Subheading", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "CTA", name: "cta", widget: "markdown", required: false}
+      - label: "Contact"
+        name: "contact"
+        editor:
+          preview: false
+        permalink: "/contact"
+        layout: "page"
+        section: "contact"
+        file: "pages/contact.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "contact"}
+          - {label: "Hero Image", name: "hero-image", widget: "hidden", default: "header-contact.jpg"}
+          - {label: "Permalink", name: "permalink", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+          - {label: "Introduction", name: "intro_paragraph", widget: "markdown", required: false}
+          - {label: "CTA", name: "cta", widget: "markdown", required: false}      
