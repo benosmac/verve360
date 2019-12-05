@@ -13,27 +13,18 @@ headline: |-
 intro_paragraph: >-
   A purpose-driven business consulting agency, we inspire small and medium
   businesses to accelerate and achieve sustainable growth.
-customers_intro: |-
-  **WE UNDERSTAND** that different growth levers need to be activated at various stages of growth, so we adjust our scope and processes accordingly.
+home_intro: |-
+  **We love** to help businesses like yours grow, whether that be defining your vision and values, empowering you through coaching, building your sales and marketing plans, or connecting your employees and customers to your brand.
+
+  *To be given the opportunity to play a part in your growth journey is our privilege.*
   
-  **WE LISTEN** first. We lead with questions, not answers.
-  
-  **WE CREATE** agile strategies, develop affordable solutions and accelerate implementation.
-  
-  **WE DELIVER** success beyond profit and turn your dreams into reality.
-customers_scenarios:
-  - content: idea is worth pursuing and you are ready to start up
-  - content: has a solid foundation and now you are ready to scale up
-  - content: is experiencing growing pain
-  - content: is not growing
-  - content: has potential growth opportunities to harness
-  - content: is growing too quickly
-  - content: is unable to achieve the growth you're striving for with your existing expertise
-  - content: is not growing fast enough
-customers_p: >-
-  No matter where you are in your growth stage, we have a solution to help alleviate the problems you are facing.
+  **You love** that we listen first. We lead with questions, not answers. We then create agile strategies, develop affordable solutions and accelerate implementation for you.
+
+  *To deliver success beyond profit and turn your dreams into reality is our goal.*
 intro-cta: >-
-  ### Ready to turn your dreams into reality?
+  ### Every journey of growth is different.
+  
+  We'd love to offer you a free one-hour advisory session to explore how to turn your challenges into opportunities.
 services_intro: >-
   Each journey is unique, and our tailored solutions reflect that. 
 
@@ -64,10 +55,6 @@ employee_alignment: >-
   advocates to your business..  
   
   Remember, happy employees = happy customers = healthy profit.
-services-cta: >-
-  ### Every journey of growth is different.
-  
-  We'd love to offer you a free one-hour advisory session to explore how to turn your challenges into opporunities.
 
 cohesion: >-
   **We believe in doing things right to create unity, inside and out.**
@@ -150,6 +137,9 @@ testimonials:
     name: Mike Paine, Chief Executive Officer, Consortio
   - content: Testimonial from Graeme Neville
     name: Graeme Neville, Chairman, Carrington King
+    
+home-cta: >-
+  ### Ready to turn your dreams into reality?
     
 ---
 

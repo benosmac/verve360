@@ -63,12 +63,38 @@ layout: default
 </span>
 </section>
 -->
+<section id="intro" class="customers-questions page-section white">
+	<div class="customers-questions--list content-col scroll fadeIn">
+		<h3>Do any of these sound familiar to you?</h3>
+		<h4>Your business:</h4>
+		<ul class="customers_list">
+		{% if page.customers_scenarios and page.customers_scenarios != '' %}
+		  {% for scenario in page.customers_scenarios %}
+		  <li class="customers_list-item">
+		    {{ scenario.content}}
+		  </li>
+		  {% endfor %}
+		{% endif %}
+		</ul>
+		{% if page.customers_p and page.customers_p != '' %}
+		    {{ page.customers_p | markdownify }}
+		{% endif %}
+	</div>
+<!--
+	<div class="customers-questions--solutions  grey scroll fadeIn" data-wow-delay=".33s">
+		<h3>Our approach:</h3>
+		{% if page.customers_intro and page.customers_intro != '' %}
+		    {{ page.customers_intro | markdownify }}
+		{% endif %}
+	</div>
+-->
+</section>
 
-<section class="family">
+<section class="page-section">
 <div class="content-col">
 	<h2>Our Family of Growth</h2>
 {% if page.family_intro and page.family_intro != '' %}
-  <p class="family_intro scroll fadeIn">
+  <p class="scroll fadeIn">
     {{ page.family_intro | markdownify | remove: '<p>' | remove: '</p>' }}
   </p>
 {% endif %}

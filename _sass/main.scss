@@ -14,6 +14,7 @@
 	visibility: hidden;
 	animation-duration: .5s;
 }
+
 .hero-section{
 	position: relative;
 	background-size: cover;
@@ -338,20 +339,18 @@ header > nav{
 	 	transition-delay: .5s;
  	}
 }
-.home-intro{
-	display: flex;
-	flex-wrap: wrap;
-	grid-template-columns: inherit;
-	grid-column: 1 / 13;
-	align-items: stretch;
-	//background: $light-grey;
-}
 .panel-wrap{
 	display: flex;
 	flex-wrap: wrap;
 	grid-template-columns: inherit;
 	grid-column: 1 / 13;
 	align-items: stretch;
+	ul{
+		list-style: none;
+		li{
+			margin: 0;
+		}
+	}
 }
 .panel-half{
 	flex-basis: 100%;
@@ -402,21 +401,6 @@ header > nav{
 		max-width: 50rem;
 	}
 }
-.home-blurb{
-	display: grid;
-	grid-template-columns: inherit;
-	grid-column: 1 / 13;
-	//background: $brand-color;
-	//color: #fff;
-	//-webkit-font-smoothing: antialiased;
-	//-moz-osx-font-smoothing: grayscale;
-	h3{
-		//color: $brand-color;
-	}
-	p, h3{
-		grid-column: 3 / 11;
-	}
-}
 .loaded{
 	#c1.scrolled,#c2.scrolled,#c3.scrolled{
 		transition-delay: 0s;
@@ -435,6 +419,12 @@ header > nav{
 }
 main[data-current="home"]{
 	background: $black;
+}
+main[data-current="post"]{
+	background: #fff;
+	color: $black;
+	-webkit-font-smoothing: subpixel-antialiased;
+	
 }
 #homepage-sections{
 	display: grid;
@@ -517,7 +507,7 @@ main[data-current="home"]{
 		grid-column: 4 / 10;
 	}
 }
-#services, #beliefs{
+.icon_list{
 	//background: #111;
 	//color: #fefefe;
 	//display: grid;
@@ -612,7 +602,7 @@ main[data-current="home"]{
 		//opacity: 1;
 	}
 }
-#services{
+.icon_list-services{
 	h3{
 		font-size: 2.25rem;
 	}
@@ -651,7 +641,7 @@ main[data-current="home"]{
 		}
 	}
 }
-#beliefs{
+.icon_list-beliefs{
 	h3{
 		font-size: 2.25rem;
 		color: $brand-color;
@@ -755,11 +745,31 @@ main[data-current="home"]{
 	background-color: #110a25;
 }
 */
-.family{
-	display: grid;
-	grid-template-columns: inherit;
-	grid-column: 1 / 13;
-	//padding-bottom: 6rem;
+
+.service-list-wrapper{
+	display: flex;
+	flex-direction: column;
+	padding: 0rem 6rem 6rem 6rem;
+	@media (min-width: $md){
+		flex-direction: row;
+	}
+	h4{
+		border-bottom: 2px solid $brand-color;
+		margin: 2rem;
+	}
+	ul {
+		margin-bottom: 4rem;
+		padding: 2rem;
+		li{
+			list-style: disc;
+		}
+	}
+}
+.service-list-content{
+	flex-basis: 100%;
+	@media (min-width: $md){
+		flex-basis: 33%;
+	}
 }
 .family_list{
 	display: flex;
@@ -798,49 +808,21 @@ li.icon_list-item,li.family_list-item,li.testimonials_list-item, .posts li{
 }
 
 .customers-questions{
-	grid-column: 1 / 13;
-	grid-template-columns: inherit;
-	display: flex;
-	flex-direction: column;
-	//color: #111;
-	//background: $light-grey;
-	@media(min-width:$sm){
-		flex-direction: row;
-	}
 	h3{
 		border-bottom: 2px solid $brand-color;
 		padding-bottom: 1rem;
 		margin-bottom: 3rem;
 	}
-	.customers-questions--solutions{
-		//display: flex;
-		////flex-wrap: wrap;
-		align-items: center;
-		//justify-content: center;
-		flex-basis: 100%;
-		padding: 6rem 4rem;
-		@media(min-width:$sm){
-			flex-basis: 50%;
-			padding: 6rem;
-		}
-	}
 	.customers-questions--list{
-		flex-basis: 100%;
-		padding: 6rem 4rem;
-		//background: $light-grey;
-		@media(min-width:$sm){
-			flex-basis: 50%;
-			padding: 6rem;
-		}
-		ul{
-			list-style: none;
+		ul{ 
 			padding: 0;
 			//border-bottom: 2px solid $brand-color;
 			margin-bottom: 2rem;
 			li{
+				list-style: none;
 				position: relative;
 				//margin-bottom: 1rem;
-				font-size: 1.4rem;
+				//font-size: 1.4rem;
 				margin:0 0 1rem 3rem;
 				&:before{
 					position: absolute;
@@ -1103,6 +1085,9 @@ transition: all .5s linear 1.4s;
 .no-padding{
 	padding: 0;
 }
+.large-text{
+	font-size: 2rem;
+}
 .page-transition--fade{
 	transition: opacity .5s ease;
 	opacity: 1;
@@ -1115,9 +1100,6 @@ html.is-animating{
 }
 .testimonials{
 	position: relative;
-	display: grid;
-	grid-template-columns: inherit;
-	grid-column: 1 / 13;
 	li{
 		span{
 			font-style: italic;
@@ -1187,6 +1169,7 @@ html.is-animating{
 	}
 	input, select{
 		flex-basis: 100%;
+		max-width: 100%;
 		margin: 0 0 1rem 0;
 		padding: .5rem;
 		@media(min-width:$md){
@@ -1196,6 +1179,7 @@ html.is-animating{
 	textarea{
 		padding: .5rem;
 		flex-basis: 100%;
+		max-width: 100%;
 		margin: 0 0 2rem 0;
 		@media(min-width:$md){
 			flex-basis: 66%;

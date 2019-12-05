@@ -1,4 +1,5 @@
-<section class="home-intro dark-grey" id="intro">
+<!--
+<section class="home-intro white" id="intro">
 	<div class="home-intro--questions purple right-to-bottom-triangle scroll slideInLeft">
 {% if page.questions and page.questions != '' %}
     {{ page.questions | markdownify }}
@@ -9,10 +10,11 @@
     {{ page.second_paragraph | markdownify }}
 {% endif %}
 </section>
-<section class="home-blurb">
-	<div class="content-col scroll fadeIn">
-{% if page.third_paragraph and page.third_paragraph != '' %}
-    {{ page.third_paragraph | markdownify }}
+-->
+<section id="intro" class="page-section white">
+	<div class="content-col large-text scroll fadeIn">
+{% if page.home_intro and page.home_intro != '' %}
+    {{ page.home_intro | markdownify }}
 {% endif %}
 	</div>
 </section>

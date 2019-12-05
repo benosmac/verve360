@@ -1,7 +1,7 @@
-<section class="beliefs section-intro">
+<section id="beliefs" class="beliefs section-intro">
 	<h2 class="section-intro--header"><span class="scroll fadeIn">Our Beliefs.</span> <span class="highlight scroll fadeIn" data-wow-delay=".5s">Your Success</span></h2>
 </section>
-	<ul id="beliefs" class="icon_list">
+	<ul class="icon_list icon_list-beliefs">
 {% if page.cohesion and page.cohesion != '' %}
   <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
@@ -57,3 +57,12 @@
   </li>
 {% endif %}
 	</ul>
+	
+<section class="page-cta green">
+	<span class="content-col scroll fadeIn">
+{% if page.home-cta and page.home-cta != '' %}
+    {{ page.home-cta | markdownify }}
+{% endif %}
+<a href="/contact" title="contact us" class="scroll bounceIn" data-wow-delay=".2s">Let's talk</a>
+</span>
+</section>

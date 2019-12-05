@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="page-header hero-section" {% include hero-section.html %}>
+<h2 class="page-header--title">{{ page.title }}</h2>
+<div id="particles"></div>
+</div>
+<div class="content grey">
+	<section class="content-col">
+	{% if page.intro_paragraph and page.intro_paragraph != '' %}
+	  <p class="large-text">
+	    {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+	  </p>
+	{% endif %}
+	</section>
+</div>
+<div class="content white">
+	<section class="content-col scroll fadeIn">
+		{{ page.body | markdownify }}
+	</section>
+</div>
+<div class="content grey">
+	<h3 class="center content-col scroll fadeIn">{{ page.title }} services we provide:</h3>
+	<section class="service-list-wrapper page-section">
+		{% if page.list1 and page.list1 != '' %}
+		<span class="service-list-content">
+			{{ page.list1 | markdownify }}
+		</span>
+		{% endif %}
+		{% if page.list2 and page.list2 != '' %}
+		<span class="service-list-content">
+			{{ page.list2 | markdownify }}
+		</span>
+		{% endif %}
+		{% if page.list3 and page.list3 != '' %}
+		<span class="service-list-content">
+			{{ page.list3 | markdownify }}
+		</span>
+		{% endif %}
+	</section>
+</div>
+	{% include page-cta.html %}

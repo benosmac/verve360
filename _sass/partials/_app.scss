@@ -5,7 +5,7 @@
 // declared beforehand, and a @supports feature query to reset fallbacks when
 // necessary. https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks
 html{
-	scroll-behavior: smooth;
+	//scroll-behavior: smooth;
 }
 // the body element is our primary layout grid
 body {
@@ -263,8 +263,8 @@ header > nav {
 	      transform-origin: top;
 	      flex-direction: column;
 	      position: absolute;
-	      background: #fff;
-	      background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255,255,255,1) 50%);
+	      background: $light-grey;
+	     // background: linear-gradient(180deg, rgba(255,255,255,.9) 0%,rgba(255,255,255,1) 50%);
 	      transition: opacity .5s ease;
 	      padding: 2rem;
 	      margin-top: 90px;

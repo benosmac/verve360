@@ -20,7 +20,7 @@ layout: default
   </div>
 <div class="content">
 {% if page.about-p1 and page.about-p1 != '' %}
-<section class="page-section">
+<section class="page-section white">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p1 | markdownify }}
   </div>
@@ -28,7 +28,7 @@ layout: default
 {% endif %}
 
 {% if page.about-p2 and page.about-p2 != '' %}
-<section class="page-section white">
+<section class="page-section large-text">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p2 | markdownify }}
   </div>
@@ -38,19 +38,19 @@ layout: default
 
 <section class="page-section panel-wrap">
 {% if page.about-we-are and page.about-we-are != '' %}
-<div class="panel-half green scroll slideInLeft">
+<div class="panel-half center large-text white scroll slideInLeft">
   {{ page.about-we-are | markdownify }}
 </div>
   {% endif %}
   {% if page.about-we-are-not and page.about-we-are-not != '' %}
-  <div class="panel-half scroll slideInRight">
+  <div class="panel-half center large-text grey scroll slideInRight">
   {{ page.about-we-are-not | markdownify }}
   </div>
   {% endif %}
 </section>
 
 {% if page.about-p3 and page.about-p3 != '' %}
-<section class="page-section white">
+<section class="page-section">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p3 | markdownify }}
   </div>
@@ -58,13 +58,14 @@ layout: default
 {% endif %}
 
 {% if page.about-p4 and page.about-p4 != '' %}
-<section class="page-section">
+<section class="page-section white">
 	<div class="content-col scroll fadeIn">
   {{ page.about-p4 | markdownify }}
   </div>
 </section>
 {% endif %}
 
+<!--
 {% if page.about-p5 and page.about-p5 != '' %}
 <section class="page-section white">
 	<div class="content-col scroll fadeIn">
@@ -72,6 +73,7 @@ layout: default
 	</div>
 </section>
 {% endif %}
+-->
 {% include page-cta.html %}
 </div>
 

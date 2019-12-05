@@ -47,6 +47,23 @@ swup.on('animationInDone', function(){
 
 function v360init(){
 	
+	
+    // Set scroll position back to top or scroll to anchor
+
+	if (window.location.hash) {
+		//console.log(window.location.hash);
+		el =  document.getElementById(window.location.hash.substring(1));
+		console.log(el);
+		hOffset = (Math.round(el.getBoundingClientRect().top) - 100);
+		console.log(hOffset);
+		window.scrollTo(0, hOffset);
+	} 
+	if (!window.location.hash) {
+		console.log('scrolling');
+		window.scrollTo(0, 0);
+	}
+
+	
 	// Scroll Events
 	const scrollUp = "scroll-up";
 	const scrollDown = "scroll-down";
@@ -57,6 +74,7 @@ function v360init(){
 			window.cancelAnimationFrame(timeout);
 		}
 		timeout = window.requestAnimationFrame(function(){
+/*
 			const currentScroll = window.pageYOffset;
 			if (currentScroll == 0) {
 				b.classList.remove(scrollUp);
@@ -73,6 +91,7 @@ function v360init(){
 				b.classList.add(scrollUp);
 			}
 			lastScroll = currentScroll;
+*/
 			
 			iconListBackground('homepage-sections');
 /*
@@ -153,10 +172,10 @@ function v360init(){
 	
 	//Particles.js
 
-	if(document.getElementById('particles')){
+if(document.getElementById('particles')){
 	particlesJS("particles", {
   particles: {
-    number: { value: 30, density: { enable: true, value_area: 800 } },
+    number: { value: 20, density: { enable: false, value_area: 300 } },
     color: { value: "#ffffff" },
     shape: {
       type: "circle",
@@ -218,6 +237,7 @@ function v360init(){
 //   wrapper: ID of parent element
 //   elements: an array of child class names
 
+/*
 function backgroundColorScroll(wrapper, elements) {
 	// calculate 2/3 the height of the viewport so we can trigger colour changes when an element reaches this point
 	var o = vh * .75;
@@ -243,6 +263,7 @@ function backgroundColorScroll(wrapper, elements) {
 		}
 	}
 }
+*/
 
 function iconListBackground(wrapper){
 	const w = document.getElementById(wrapper);
@@ -257,6 +278,7 @@ function iconListBackground(wrapper){
 }
 
 // Control parralax scrolling effect on elements with [data-speed] attributes
+/*
 function scrollParralax() {
 	var parallaxEls = document.querySelectorAll("[data-speed]");
 	if (this.pageYOffset < vh){
@@ -268,6 +290,7 @@ function scrollParralax() {
 	  }
 	  }
 }
+*/
 
 // Calculate and set initial styles for SVG logo animation
 function setupLogoAnimation(){
@@ -298,7 +321,7 @@ function runLogoAnimation() {
 
 // Reset state classes while new page loading
 function pageLoading(){
-	console.log(window.location.hash);
+	//console.log(window.location.hash);
 	//show the nav bar
 	b.classList.remove('scroll-down');
 	// Close the nav panel
@@ -309,11 +332,7 @@ function pageLoading(){
 	b.classList.remove('loaded');
 	//unset smooth scroll behaviour before resetting scroll position
 	//html.style.cssText = "scroll-behavior: auto;";
-	// Set scroll position back to top
-	if(!window.location.hash){
-		console.log('scrolling');
-		window.scrollTo(0, 0);
-	}
+
 	//reset smooth scroll behaviour before resetting scroll position
 	//html.style.cssText = "scroll-behavior: smooth;";
 }

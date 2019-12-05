@@ -1391,6 +1391,8 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
 }
 
 @-webkit-keyframes fadeInDown {

@@ -1,4 +1,4 @@
-<section class="section-intro" id="services-overview">
+<section id="services" class="section-intro">
 	<h2 class="section-intro--header"><span class="scroll fadeIn">Our Services.</span> <span class="highlight scroll fadeIn" data-wow-delay=".5s">Your solutions</span></h2>
 {% if page.services_intro and page.services_intro != '' %}
   <p class="section-intro--content scroll fadeIn" data-wow-delay=".8s">
@@ -6,7 +6,7 @@
   </p>
 {% endif %}
 </section>
-<ul class="icon_list" id="services">
+<ul class="icon_list icon_list-services">
 {% if page.advisory and page.advisory != '' %}
   <li class="icon_list-item scroll fadeInUp">
   <span class="icon_list-content">
@@ -48,12 +48,3 @@
   </li>
 {% endif %}
 </ul>
-
-<section class="page-cta green">
-	<span class="content-col scroll fadeIn">
-{% if page.services-cta and services.services-cta != '' %}
-    {{ page.services-cta | markdownify }}
-{% endif %}
-<a href="/contact" title="contact us" class="scroll bounceIn" data-wow-delay=".2s">Let's talk</a>
-</span>
-</section>
