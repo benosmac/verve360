@@ -1,4 +1,5 @@
 (function() {
+  const vo = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) / 4;
   var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -156,7 +157,6 @@
   };
 
   getComputedStyleRX = /(\-([a-z]){1})/g;
-  var vo = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) / 5;
   this.WOW = (function() {
     WOW.prototype.defaults = {
       boxClass: 'scroll',

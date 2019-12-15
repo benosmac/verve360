@@ -25,24 +25,39 @@ service-body: >-
   ### A personalised approach.
   
   
-  No two executives are the same. We use a collaborative and personalised approach to assist you in defining your vision and values. We mentor and coach you in the way that best helps solve the challenges you need to address and harness the opportunities that you want to realise.
+  No two executives are the same. We use a collaborative and personalised approach that focuses on strategising for the success and growth of a business. We combine the power of coaching, mentoring and advising to best helps solve the 3 most common challenges, namely:
+  
+    - Make more revenue
+    - Retain employees and customers
+    - Be more efficient
   
   
   Whether it be for one to one coaching, small group coaching, executive mentoring or simply business advice, we will provide you with the valuable information, business know-how and tools that you need to help overcome your day to day challenges in leading a business.
   
 list1: >-
-    * One on one coaching or advisory'
-    
-    * Small group coaching
-    
-    * Executive mentoring
-    
-    * Business growth driven advice
+
+  #### INNOVATE
+  
+    * One on one personalised coaching program
+    * Small group personalised coaching program     
+    * Personal brand coaching program    
+    * Strategic business planning    
+    * Business idea brain storming
     
 list2: >-
-    * Strategic business planning 
+
+  #### CREATE
+  
+    * Business plan development     
+    * Marketing department establishment     
+    * Marketing and HR alignment program
     
-    * Purpose, vision and values workshop 
-    
-    * Business, Marketing and Sales sounding board
+list3: >-
+
+  #### ELEVATE
+  
+    * Purpose, vision and values workshop    
+    * Sales and Marketing alignment workshop     
+    * Internal audit and external research    
+    * Market feasibility analysis
 ---

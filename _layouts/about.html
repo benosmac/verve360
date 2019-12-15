@@ -27,6 +27,7 @@ layout: default
 </section>
 {% endif %}
 
+<!--
 {% if page.about-p2 and page.about-p2 != '' %}
 <section class="page-section large-text">
 	<div class="content-col scroll fadeIn">
@@ -34,11 +35,12 @@ layout: default
   </div>
 </section>
 {% endif %}
+-->
 
 
 <section class="page-section panel-wrap">
 {% if page.about-we-are and page.about-we-are != '' %}
-<div class="panel-half center large-text white scroll slideInLeft">
+<div class="panel-half center large-text green scroll slideInLeft">
   {{ page.about-we-are | markdownify }}
 </div>
   {% endif %}

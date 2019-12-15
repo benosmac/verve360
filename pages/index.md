@@ -13,14 +13,33 @@ headline: |-
 intro_paragraph: >-
   A purpose-driven business consulting agency, we inspire small and medium
   businesses to accelerate and achieve sustainable growth.
-home_intro: |-
-  **We love** to help businesses like yours grow, whether that be defining your vision and values, empowering you through coaching, building your sales and marketing plans, or connecting your employees and customers to your brand.
-
-  *To be given the opportunity to play a part in your growth journey is our privilege.*
+home_intro-1: |-
+  ### *What* we do
   
-  **You love** that we listen first. We lead with questions, not answers. We then create agile strategies, develop affordable solutions and accelerate implementation for you.
+  We unite the services of
+  
+  - [Advisory & Coaching](/advisory) 
+  - [Strategic Branding](/branding) 
+  - [Marketing & Communication](/marketing) 
+  - [Employee Alignment & Connection](/employee-connection) 
+  
+  to empower businesses to reach new heights.
+home_intro-2: |-
+  ### *How* we do it
 
-  *To deliver success beyond profit and turn your dreams into reality is our goal.*
+  We listen first. We lead with questions, not answers. 
+  
+  We then create agile strategies, develop affordable solutions and accelerate implementation for you.
+  
+  We are guided by our [fundamental beliefs](#beliefs) in everything we do.
+home_intro-3: |-
+  ### *Why* we do it
+  
+  Committed to creating a better world through the power of growth is our purpose.
+  
+  To be given the opportunity to play a part in your growth journey is our privilege.
+  
+  To deliver success beyond profit and turn your dreams into reality is our goal.
 intro-cta: >-
   ### Every journey of growth is different.
   
@@ -64,7 +83,7 @@ cohesion: >-
     We make it easier for your customers to buy and your staff to sell.
 
 collaboration: >-
-  **We believe in working together to achieve shared goals**
+  **We believe in working together to achieve shared goals.**
 
 
   To win new customers and keep your existing ones, we believe that the most effective way is to truly understand what they need and want. The most efficient way of doing this is through genuine collaboration, where we harness each other’s comparative advantage, share ideas and knowledge and have an authentic and open partnership.
@@ -98,7 +117,7 @@ hearts: >-
   Unlike some agencies who focus on creativity and intuition and others who focus on logic and the facts, we are one of only a handful of agencies that focus on both hearts and minds. By using rational persuasion, we create, change and embed the perception of your organisation, products and services in people’s minds. We also use emotional connection to influence how people think and feel about who you are and what you do.
 
 
-  The benefit – A balanced approach to capture a bigger market share
+  The benefit – A balanced approach to capture a bigger market share.
 standingout: >-
 
   **We believe in towering above the rest.**

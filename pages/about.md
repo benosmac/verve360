@@ -58,7 +58,7 @@ about-p3: >-
   Using our business consulting expertise, we help businesses to identify their problems or opportunities and develop optimal solutions using tried and tested data, insights, frameworks and models.
   
   
-  We go beyond consulting to turn strategy into actions, where you can either insource or outsource your marketing and internal communications or utilise our advisory services by allowing us to mentor and coach your marketing or HR teams.
+  We go beyond consulting to turn strategy into actions, where you can either insource or outsource your marketing and internal communications or utilise our advisory services by allowing us to mentor and coach you, your marketing or HR teams.
   
 about-p4: >-   
   ### PARTNERING WITH US MEANS YOU WILL … 
@@ -70,7 +70,7 @@ about-p4: >-
   
   * Have a trusted associate who can help take your business to the next level
   
-  * Work with an agency that stands by you all the way from strategy review and development to hands-on implementation...
+  * Work with an agency that stands by you all the way from strategy development to hands-on implementation...
 
 
   ...to help you achieve long-term sustainable growth.

@@ -7,6 +7,8 @@ intro_paragraph: |-
   Get to know your growth leader
 hero-image: header-advisory.jpg
 
+cta: >-
+  Don’t be shy, every successful partnership starts with a simple Hello.
 ---
 
   Verve360's founder and principal consultant, Martin Foon, has proven track records in delivering profitable solutions, fostering employee engagement, building strong brands and achieving growth in many organisations, including Wiley, Australia Post, Mobil Oil, Aegis Services, small to medium enterprises, as well as start-ups and entrepreneurial businesses.

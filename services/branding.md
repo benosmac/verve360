@@ -14,7 +14,7 @@ cta: >-
   We'd love to offer you a free one-hour brand audit session.
 
 service-body: >-
-  Therefore, every brand requires a clear, cohesive and authentic narrative. It needs to engage the hearts and minds of your audience, to form lasting and meaningful connections and encourage loyalty and trust.
+  Every brand requires a clear, cohesive and authentic narrative. It needs to engage the hearts and minds of your audience, to form lasting and meaningful connections and encourage loyalty and trust.
   
   
   ### Compre-brand-sive.
@@ -60,6 +60,7 @@ list2: >-
     * brand Identity
     * brand mark and logo
     * visual theme
+    * visual ownership
     * photography and art direction   
     * communication design
     * brand guidelines
