@@ -7,7 +7,7 @@ layout: default
 </div>
 <div class="content">
 	<section class="content-col scroll fadeIn">
-	{{ page.intro_paragraph }}
+	{{ page.intro_paragraph | markdownify}}
 {{ content }}
 	</section>
 	{% include contact-form.html %}
