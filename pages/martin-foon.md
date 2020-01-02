@@ -5,7 +5,7 @@ permalink: /growth-leader
 section: growth-leader
 intro_paragraph: |-
   Get to know your growth leader
-hero-image: header-advisory.jpg
+hero-image: header-mf.jpg
 
 cta: >-
   Don’t be shy, every successful partnership starts with a simple Hello.
@@ -22,6 +22,6 @@ cta: >-
 
   Martin possesses exceptional communication and interpersonal skills. He is multi-lingual (English, Mandarin, Cantonese, Malay, and the dialect of Hakka).
 
-  He is a professional mentor for AMI and RMIT University. He is also a sessional teacher of Entrepreneurial Marketing in the University of Melbourne.
-
   Tertiary qualified with an MBA from Melbourne Business School, University of Melbourne and a Bachelor of Business (Accountancy) degree from RMIT University, Martin is also a Certified Practicing Marketer and a fellow member of the Australia Marketing Institute (AMI).
+  
+  He is a professional mentor for AMI and RMIT University. He is also a sessional teacher of Entrepreneurial Marketing as well as Service & Relationship Marketing in the University of Melbourne.

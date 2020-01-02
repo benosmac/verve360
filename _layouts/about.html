@@ -6,11 +6,9 @@ layout: default
 <div class="page-header about-header hero-section" {% include hero-section.html %}>
 	  <h2 class="page-header--title">About us</h2>
 	  
-	{% if page.about-intro and page.about-intro != '' %}
 	<span class="page-header--intro">
-      {{ page.about-intro | markdownify }}
+      {% include page-intro.html %}
       </span>
-    {% endif %}
 <!--
 	  <img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
 <img class="circle" id="c2" data-speed=".4" data-direction="up" src="/assets/img/v360-circle.svg">

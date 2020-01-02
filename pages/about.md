@@ -5,7 +5,7 @@ permalink: /about-us
 section: about
 hero-image: header-about_us.jpg
 
-about-intro: >-
+intro_paragraph: >-
   We’re committed to creating a better world through the power of growth
 
 about-p1: >-

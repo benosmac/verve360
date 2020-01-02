@@ -19,7 +19,7 @@ service-body: >-
   To achieve emotional connection and performance for your employees, we believe that connecting your employees to your brand is critical.
 
 
-  ### The three rules we follow – *Connect. Complement. Clear.*
+  ### The three rules we follow – *"Connect", "Complement", "Clear"*
 
 
   Connect - Through subtly embedding your brand values, promises and messaging throughout your entire employee lifecycle, we ensure your employees are aligned to your brand, live your values and be an ambassador of your business.
@@ -35,24 +35,24 @@ service-body: >-
 list1: >-
   #### INNOVATE
   
-    * employee connection and engagement workshop and planning
-    * employee connection consulting
-    * corporate value and culture discovery
+    * Employee connection and engagement workshop and planning
+    * Employee connection consulting
+    * Corporate value and culture discovery
     
 list2: >-    
   #### CREATE  
     
-    * employee connection and engagement strategy
-    * internal branding and communication
+    * Employee connection and engagement strategy
+    * Internal branding and communication
     
 list3: >-
   #### ELEVATE
       
-    * employee connection program launch
-    * intranet design and development
-    * internal branding toolkit design and development
-    * employee engagement index
-    * employee net promotor score
-    * employee surveys and research
-    * workshops and training facilitation
+    * Employee connection program launch
+    * Intranet design and development
+    * Internal branding toolkit design and development
+    * Employee engagement index
+    * Employee net promotor score
+    * Employee surveys and research
+    * Workshops and training facilitation
 ---

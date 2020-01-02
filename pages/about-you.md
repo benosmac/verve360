@@ -3,7 +3,7 @@ layout: about-you
 hero-image: header-about_you.jpg
 permalink: /about-you
 title: About You
-customer_subheading: 'You are visionary, ambitious and committed to growth'
+intro_paragraph: You are visionary, ambitious and committed to growth
 customers_scenarios:
   - content: is experiencing growing pain
   - content: is growing too quickly

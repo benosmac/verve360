@@ -11,18 +11,19 @@
 {% endif %}
 </section>
 -->
-<section id="intro" class="page-section white">
-	<div class="intro-col scroll fadeIn">
+<a class="anchor" id="intro"></a>
+<section class="home-intro page-section white">
+	<div class="home-intro-col scroll fadeIn">
 {% if page.home_intro-1 and page.home_intro-1 != '' %}
     {{ page.home_intro-1 | markdownify }}
 {% endif %}
 	</div>
-	<div class="intro-col scroll fadeIn" data-wow-delay=".2s">
+	<div class="home-intro-col scroll fadeIn" data-wow-delay=".2s">
 {% if page.home_intro-2 and page.home_intro-2 != '' %}
     {{ page.home_intro-2 | markdownify }}
 {% endif %}
 	</div>
-	<div class="intro-col scroll fadeIn" data-wow-delay=".4s">
+	<div class="home-intro-col scroll fadeIn" data-wow-delay=".4s">
 {% if page.home_intro-3 and page.home_intro-3 != '' %}
     {{ page.home_intro-3 | markdownify }}
 {% endif %}

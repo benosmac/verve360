@@ -65,36 +65,36 @@ service-body: >-
 
 list1: >-
   #### INNOVATE
-    * marketing and communication workshop and planning
-    * consultative selling planning
-    * marketing consulting
-    * marketing advisory
-    * marketing training
-    * sales and marketing integration
-    * marketing department establishment
+    * Marketing and communication workshop and planning
+    * Consultative selling planning
+    * Marketing consulting
+    * Marketing advisory
+    * Marketing training
+    * Sales and marketing integration
+    * Marketing department establishment
     
 list2: >-    
   #### CREATE
   
-    * marketing strategy
-    * marketing plan
-    * communication strategy
-    * communication plan
-    * content strategy
-    * digital marketing strategy
-    * digital marketing plan
-    * go-to-market strategy
-    * product expansion strategy
+    * Marketing strategy
+    * Marketing plan
+    * Communication strategy
+    * Communication plan
+    * Content strategy
+    * Digital marketing strategy
+    * Digital marketing plan
+    * Go-to-market strategy
+    * Product expansion strategy
     
 list3: >-    
   #### ELEVATE
-    * copywriting
-    * market research
-    * digital marketing
-    * marketing automation
-    * email marketing
-    * social media marketing
-    * search engine marketing
-    * website design and development
-    * buyer journey mapping and buyer persona
+    * Copywriting
+    * Market research
+    * Digital marketing
+    * Marketing automation
+    * Email marketing
+    * Social media marketing
+    * Search engine marketing
+    * Website design and development
+    * Buyer journey mapping and buyer persona
 ---

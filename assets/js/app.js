@@ -45,103 +45,43 @@ swup.on('animationInDone', function(){
 	//html.style.cssText = "scroll-behavior: smooth;";
 });
 
+
+// window.onload functions
+// Also called on AJAX page updates
 function v360init(){
 	
-	
     // Set scroll position back to top or scroll to anchor
-
 	if (window.location.hash) {
 		//console.log(window.location.hash);
 		el =  document.getElementById(window.location.hash.substring(1));
-		console.log(el);
+// 		console.log(el);
 		hOffset = (Math.round(el.getBoundingClientRect().top) - 100);
-		console.log(hOffset);
+// 		console.log(hOffset);
 		window.scrollTo(0, hOffset);
 	} 
 	if (!window.location.hash) {
-		console.log('scrolling');
+// 		console.log('scrolling');
 		window.scrollTo(0, 0);
 	}
 
-	
 	// Scroll Events
-	const scrollUp = "scroll-up";
-	const scrollDown = "scroll-down";
-	let lastScroll = 0;
+	// Throttle scroll events using setTimeout and requestAnimationFrame
 	var timeout;
 	window.addEventListener("scroll", () => {
 		if(timeout){
 			window.cancelAnimationFrame(timeout);
 		}
 		timeout = window.requestAnimationFrame(function(){
-/*
-			const currentScroll = window.pageYOffset;
-			if (currentScroll == 0) {
-				b.classList.remove(scrollUp);
-				return;
-			}
-			
-			if (currentScroll > lastScroll && !b.classList.contains(scrollDown)) {
-				// down
-				b.classList.remove(scrollUp);
-				b.classList.add(scrollDown);
-			} else if (currentScroll < lastScroll && b.classList.contains(scrollDown)) {
-				// up
-				b.classList.remove(scrollDown);
-				b.classList.add(scrollUp);
-			}
-			lastScroll = currentScroll;
-*/
-			
 			iconListBackground('homepage-sections');
-/*
-			var belowHeader;
-			var hero = document.getElementById('hero');
-			if(!hero){
-				return;
-			} else {
-				hOffset = hero.getBoundingClientRect().top;
-				console.log(hOffset);
-				if(hOffset <= 0){
-					belowHeader = true;
-				} else {
-					belowHeader = false;
-				}
-				if(belowHeader === true){
-					if (b.classList.contains('scrolled')){
-						return;
-					} else {
-						b.classList.add('scrolled');
-					}
-				}
-				if(belowHeader === false){
-					if (b.classList.contains('scrolled')){
-						b.classList.remove('scrolled');
-					}
-					return;
-				}
-			}
-*/
 		});
 	});
 	
-/*
-	window.onscroll = function(){
-		if (document. getElementById('services')){
-			backgroundColorScroll('services', ['services-1','services-2','services-3','services-4']);
-			//iconListBackground('services');
-		}
-		if (document. getElementById('beliefs')){
-			backgroundColorScroll('beliefs', ['beliefs-1','beliefs-2','beliefs-3','beliefs-4','beliefs-5','beliefs-6']);
-			//iconListBackground('beliefs');
-		}
-		//scrollParralax();
-	};
-*/
-		
 	// Click events
 	
+	// nav toggle
 	nb.addEventListener('click', toggleNav);
+	
+	// sub-nav toggle
 	var subnav = document.querySelectorAll('.has-subitems > a');
 	for (var i = 0; i < subnav.length; i++) {
     	subnav[i].addEventListener('click', toggleMobileSubnav, false);
@@ -172,99 +112,67 @@ function v360init(){
 	
 	//Particles.js
 
-if(document.getElementById('particles')){
-	particlesJS("particles", {
-  particles: {
-    number: { value: 20, density: { enable: false, value_area: 300 } },
-    color: { value: "#ffffff" },
-    shape: {
-      type: "circle",
-      stroke: { width: 0, color: "#000000" },
-      polygon: { nb_sides: 5 },
-      image: { src: "img/github.svg", width: 100, height: 100 }
-    },
-    opacity: {
-      value: .7,
-      random: true,
-      anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
-    },
-    size: {
-      value: 3,
-      random: true,
-      anim: { enable: false, speed: 4, size_min: 0.3, sync: false }
-    },
-    line_linked: {
-      enable: false,
-      distance: 150,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "none",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 600 }
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: false, mode: "bubble" },
-      onclick: { enable: false, mode: "push" },
-      resize: true
-    },
-    modes: {
-      grab: { distance: 400, line_linked: { opacity: 1 } },
-      bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
-      repulse: { distance: 400, duration: 0.4 },
-      push: { particles_nb: 4 },
-      remove: { particles_nb: 2 }
-    }
-  },
-  retina_detect: true
-});
-}
+	if(document.getElementById('particles')){
+		particlesJS("particles", {
+		  particles: {
+		    number: { value: 20, density: { enable: false, value_area: 300 } },
+		    color: { value: "#ffffff" },
+		    shape: {
+		      type: "circle",
+		      stroke: { width: 0, color: "#000000" },
+		      polygon: { nb_sides: 5 },
+		      image: { src: "img/github.svg", width: 100, height: 100 }
+		    },
+		    opacity: {
+		      value: .7,
+		      random: true,
+		      anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
+		    },
+		    size: {
+		      value: 3,
+		      random: true,
+		      anim: { enable: false, speed: 4, size_min: 0.3, sync: false }
+		    },
+		    line_linked: {
+		      enable: false,
+		      distance: 150,
+		      color: "#ffffff",
+		      opacity: 0.4,
+		      width: 1
+		    },
+		    move: {
+		      enable: true,
+		      speed: 1,
+		      direction: "none",
+		      random: true,
+		      straight: false,
+		      out_mode: "out",
+		      bounce: false,
+		      attract: { enable: false, rotateX: 600, rotateY: 600 }
+		    }
+		  },
+		  interactivity: {
+		    detect_on: "canvas",
+		    events: {
+		      onhover: { enable: false, mode: "bubble" },
+		      onclick: { enable: false, mode: "push" },
+		      resize: true
+		    },
+		    modes: {
+		      grab: { distance: 400, line_linked: { opacity: 1 } },
+		      bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
+		      repulse: { distance: 400, duration: 0.4 },
+		      push: { particles_nb: 4 },
+		      remove: { particles_nb: 2 }
+		    }
+		  },
+		  retina_detect: true
+		});
+	}
 		
 }
 
-// Change the background-color of a parent element when child elements are in the middle of the viewport.
-// Params: 
-//   wrapper: ID of parent element
-//   elements: an array of child class names
-
-/*
-function backgroundColorScroll(wrapper, elements) {
-	// calculate 2/3 the height of the viewport so we can trigger colour changes when an element reaches this point
-	var o = vh * .75;
-	// parent element
-	var w = document.getElementById(wrapper);
-	let els = elements;
-	for (var el of els){
-		//find the elements current vertical offset from the top of the viewport
-		var e = document.getElementById(el);
-		if (e !== null){
-			var elOffset = e.getBoundingClientRect().top;
-			// if the element is in the bottom third of the viewport
-			if ( elOffset < o && elOffset > 0){
-				//var wHeight = w.clientHeight;
-				//var mid = wHeight / 2;
-				//var offset = w.getBoundingClientRect().top + mid;
-				//opacity = offset / wHeight;
-				//w.style.backgroundColor = 'rgba(66,39,144,' + opacity + ')';
-				e.classList.add('visible');
-			}
-		} else {
-			break;
-		}
-	}
-}
-*/
-
+// Change background colour of div based on scroll position
 function iconListBackground(wrapper){
 	const w = document.getElementById(wrapper);
 	if(w){
@@ -276,21 +184,6 @@ function iconListBackground(wrapper){
 		}
 	}
 }
-
-// Control parralax scrolling effect on elements with [data-speed] attributes
-/*
-function scrollParralax() {
-	var parallaxEls = document.querySelectorAll("[data-speed]");
-	if (this.pageYOffset < vh){
-	for (const parallaxEl of parallaxEls) {
-		parallaxEl.classList.add('scrolled');
-	    const direction = parallaxEl.dataset.direction == "up" ? "-" : "";
-	    const transformY = this.pageYOffset * parallaxEl.dataset.speed;
-	      parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0)`;
-	  }
-	  }
-}
-*/
 
 // Calculate and set initial styles for SVG logo animation
 function setupLogoAnimation(){

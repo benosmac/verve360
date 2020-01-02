@@ -6,11 +6,9 @@ layout: default
 <div class="page-header about-header hero-section" {% include hero-section.html %}>
 	  <h2 class="page-header--title">About You</h2>
 	  
-	{% if page.customer_subheading and page.customer_subheading != '' %}
 	<span class="page-header--intro">
-      {{ page.customer_subheading | markdownify }}
+      {% include page-intro.html %}
       </span>
-    {% endif %}
 <!--
 	  <img class="circle" id="c1" data-speed=".2" data-direction="up" src="/assets/img/v360-circle.svg">
 <img class="circle" id="c2" data-speed=".4" data-direction="up" src="/assets/img/v360-circle.svg">
@@ -103,9 +101,9 @@ layout: default
 {% if page.family and page.family != '' %}
   {% for member in page.family %}
   <li class="family_list-item scroll fadeInUp">
-    <a title="{{ member.title }}" href="{{ member.url }}" target="_blank">
-    <img src="{{ member.logo }}">
-    </a>
+<!--     <a title="{{ member.title }}" href="{{ member.url }}" target="_blank"> -->
+    <img src="{{ member.logo }}" alt="{{ member.title }} Logo">
+<!--     </a> -->
   </li>
   {% endfor %}
 {% endif %}

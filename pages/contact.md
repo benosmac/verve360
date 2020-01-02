@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact
+title: Let's talk
 permalink: /contact
 section: contact
 intro_paragraph: |-
