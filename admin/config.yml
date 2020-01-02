@@ -46,6 +46,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
+      - {label: "Hero image", name: "hero-image", widget: "hidden", default: "header-home.jpg"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "service-body", widget: "markdown", required: false}
       - {label: "Lists - 1", name: "list1", widget: "markdown", required: false}

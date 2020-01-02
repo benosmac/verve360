@@ -3,6 +3,7 @@ layout: service
 title: Strategic Branding
 permalink: /branding
 section: branding
+hero-image: header-branding.jpg
 intro_paragraph: >-
   Your brand is the essential character of your organisation and your most
   powerful asset in differentiating you from your competitors and making you the
