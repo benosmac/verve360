@@ -70,7 +70,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string", tagname: "h1"}
           - {label: "Headline", name: "headline", widget: "markdown", required: false}
           - {label: "Header Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-          - {label: "Introduction Paragraph", name: "home_intro", widget: "markdown", required: false}
+          - {label: "Introduction Col 1", name: "home_intro-1", widget: "markdown", required: false}
+          - {label: "Introduction Col 2", name: "home_intro-2", widget: "markdown", required: false}
+          - {label: "Introduction Col 3", name: "home_intro-3", widget: "markdown", required: false}
 #          - {label: "Our approach", name: "customers_intro", widget: "markdown", required: false}home_intro
 #           - {label: "Intro Questions", name: "questions", widget: "markdown", required: false}
 #           - {label: "Intro Paragraph", name: "second_paragraph", widget: "markdown", required: false}

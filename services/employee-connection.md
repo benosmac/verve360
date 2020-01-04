@@ -19,16 +19,16 @@ service-body: >-
   To achieve emotional connection and performance for your employees, we believe that connecting your employees to your brand is critical.
 
 
-  ### The three rules we follow – *"Connect", "Complement", "Clear"*
+  ### The three rules we follow – Connect. Complement. Clear.
 
 
-  Connect - Through subtly embedding your brand values, promises and messaging throughout your entire employee lifecycle, we ensure your employees are aligned to your brand, live your values and be an ambassador of your business.
+  **Connect** - Through subtly embedding your brand values, promises and messaging throughout your entire employee lifecycle, we ensure your employees are aligned to your brand, live your values and be an ambassador of your business.
 
 
-  Complement - We make it our mission to complement your HR team’s expertise and we mould our services to complement them in connecting and aligning your employees to your brand.
+  **Complement** - We make it our mission to complement your HR team’s expertise and we mould our services to complement them in connecting and aligning your employees to your brand.
 
 
-  Clear - We make it simple and clear. Having clarity of purpose, role and responsibilities means your employees know what they are doing, when they are doing it and why they are doing it.
+  **Clear** - We make it simple and clear. Having clarity of purpose, role and responsibilities means your employees know what they are doing, when they are doing it and why they are doing it.
 
 
 
