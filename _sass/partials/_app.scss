@@ -72,6 +72,10 @@ header > h1 {
   display: inline-block;
   padding-bottom: 1rem;
   z-index: 999;
+/*
+  align-self: center;
+  justify-self: center;
+*/
   @media screen and (min-width: $sm) {
     padding-bottom: 0;
   }
@@ -87,11 +91,22 @@ header > h1 {
 	    width: 150px;
     }
   }
-  a:hover {
+  a:hover,a:focus {
     color: white;
     border: 0;
+    text-decoration: none;
   }
 }
+/*
+.loaded{
+	header{
+		height: 100px;
+	}
+	header > h1{
+		justify-self: left;
+	}
+}
+*/
 @media screen and (max-width: $sm) {
 	#nav {
 		transform: translateX(100%);
@@ -108,9 +123,9 @@ header > h1 {
 	    >ul{
 		    margin-top: 82px;
 		    >li{
-			    border-bottom: 2px solid #fff;
+			    border-bottom: 1px solid #fff;
 			    &:first-child{
-				    border-top: 2px solid #fff;;
+				    border-top: 1px solid #fff;
 			    }
 		    }
 	    }
@@ -139,6 +154,13 @@ header > h1 {
 	      }
 	    }
 	    li.has-subitems{
+/*
+		    >a{
+				span{
+					font-size: 2rem;
+				}
+		    }
+*/
 		    ul{
 			    transform: scaleY(0);
 			    //transform-origin: top;
@@ -147,7 +169,7 @@ header > h1 {
 			    height: 0;
 			    li{
 				   // padding: 2rem 0 1rem 0;
-				    a{
+				    a, a:visited{
 					  font-size: 1.5rem; 
 				    }
 				    &:last-child{

@@ -2,7 +2,7 @@
 <ul>
 {% for item in include.navigation %}
   <li {% if item.subitems %} class="has-subitems" {% endif %}>
-    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %} {% if item.subitems %}data-no-swup{% endif %}>{{ item.text }}{% if item.subitems %} &#x2304;{% endif %}</a>
+    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %} {% if item.subitems %}data-no-swup{% endif %}>{{ item.text }}{% if item.subitems %}<span> &#x2304;</span>{% endif %}</a>
     {% if item.subitems %}
       {% include navigation.html navigation=item.subitems %}
     {% endif %}

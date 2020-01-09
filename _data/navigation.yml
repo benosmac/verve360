@@ -18,7 +18,7 @@
     url: /about-us
   - text: About You
     url: /about-you
-- text: Insights
-  url: /blog
+# - text: Insights
+#   url: /blog
 - text: Let's talk
   url: /contact
