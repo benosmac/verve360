@@ -23,17 +23,17 @@ layout: default
 	<h3 class="center content-col scroll fadeIn">{{ page.title }} services we provide:</h3>
 	<section class="service-list-wrapper page-section">
 		{% if page.list1 and page.list1 != '' %}
-		<span class="service-list-content">
+		<span class="service-list-content scroll fadeIn">
 			{{ page.list1 | markdownify }}
 		</span>
 		{% endif %}
 		{% if page.list2 and page.list2 != '' %}
-		<span class="service-list-content">
+		<span class="service-list-content scroll fadeIn" data-wow-delay=".33s">
 			{{ page.list2 | markdownify }}
 		</span>
 		{% endif %}
 		{% if page.list3 and page.list3 != '' %}
-		<span class="service-list-content">
+		<span class="service-list-content scroll fadeIn" data-wow-delay=".66s">
 			{{ page.list3 | markdownify }}
 		</span>
 		{% endif %}

@@ -478,6 +478,9 @@ footer {
 	  input[type="email"]{
 		padding: 6px;
 	    margin-bottom: 2rem;
+	    width: 200px;
+	    max-width: 100%;
+	    display: block;
 	    //background: $light-grey;
 	   // border: 1px solid $black;
 	  }
