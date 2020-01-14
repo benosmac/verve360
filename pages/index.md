@@ -2,7 +2,7 @@
 layout: home
 hero-image: header-home.jpg
 permalink: /
-title: Welcome
+title: Verve360 - Accelerate growth
 headline: |-
   Unleash potential.
 
@@ -233,7 +233,6 @@ testimonials:
     name: >-
       Graeme Neville, Chairman (Carrington King) and Managing Director
       (Pathfinder Solutions)
-home-cta: |-
-  ### Ready to turn your dreams into reality?
+home-cta: '### Ready to turn your dreams into reality?'
 ---
 
